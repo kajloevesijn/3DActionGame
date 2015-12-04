@@ -18,46 +18,143 @@ public class Xbox360Wired_InputController : MonoBehaviour {
     public bool leftStickActive;
     public float leftStickX;
     public float leftStickY;
+    public float rightStickX;
+    public float rightStickY;
 
     public bool GUION;
+
+    //bools for buttons
+    private bool leftShoulder = false;
+    private bool rightShoulder = false;
+
+    private bool aButton = false;
+    private bool bButton = false;
+    private bool xButton = false;
+    private bool yButton = false;
 
 
     // Use this for initialization
     void Start () {
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		FindController ();
         SetState();
+        CheckForButtonPress();
+        CheckForButtonRelease();
+        ButtonActions(); //do things like shooting here
 
         if (DeadZoneCheckRight())
         {
+            rightStickX = state.ThumbSticks.Right.X;//holds x value of stick
+            rightStickY = state.ThumbSticks.Right.Y;//holds y value of stick
             rightStickAngle = CalculateRotation(state.ThumbSticks.Right.X, state.ThumbSticks.Right.Y); // calculates a angle for the right stick
         }
         else
         {
-
-
+            rightStickX = 0f; // set it back to 0 if inside the deadzone
+            rightStickY = 0f; // set it back to 0 if inside the deadzone
         }
         if (DeadZoneCheckLeft())
         {
-            leftStickX = state.ThumbSticks.Left.X;
-            leftStickY = state.ThumbSticks.Left.Y;
+            leftStickX = state.ThumbSticks.Left.X;//holds x value of stick
+            leftStickY = state.ThumbSticks.Left.Y;//holds y value of stick
             leftStickAngle = CalculateRotation(state.ThumbSticks.Left.X, state.ThumbSticks.Left.Y);   // calculates a angle for the left stick
         }
         else
         {
-            leftStickX = 0f;
-            leftStickY = 0f;
+            leftStickX = 0f; // set it back to 0 if inside the deadzone
+            leftStickY = 0f; // set it back to 0 if inside the deadzone
         }
 
     }
-    private float CalculateRotation(float X, float Y) // calculates angle based on incoming X & Y values;
+    private void ButtonActions()
     {
-        float angle = Mathf.Atan2(X, Y) * Mathf.Rad2Deg;
-        //Debug.Log(angle);
-        return angle;
+        if(leftShoulder == true)
+        {
+            GetComponent<WeaponController>().Attack(0);
+        }
+        if (rightShoulder == true)
+        {
+            GetComponent<WeaponController>().Attack(1);
+        }
+        if (aButton == true)
+        {
+
+        }
+        if (bButton == true)
+        {
+
+        }
+        if (xButton == true)
+        {
+
+        }
+        if (yButton == true)
+        {
+
+        }
+    }
+    private void CheckForButtonPress() // check if a button was pressed this frame
+    {
+        //shoulders
+        if (prevState.Buttons.LeftShoulder == ButtonState.Released && state.Buttons.LeftShoulder == ButtonState.Pressed)
+        {
+            leftShoulder = true;
+        }
+        if (prevState.Buttons.RightShoulder == ButtonState.Released && state.Buttons.RightShoulder == ButtonState.Pressed)
+        {
+            rightShoulder = true;
+        }
+
+        // buttons
+        if (prevState.Buttons.A == ButtonState.Released && state.Buttons.A == ButtonState.Pressed)
+        {
+            aButton = true;
+        }
+        if (prevState.Buttons.B == ButtonState.Released && state.Buttons.B == ButtonState.Pressed)
+        {
+            bButton = true;
+        }
+        if (prevState.Buttons.X == ButtonState.Released && state.Buttons.X == ButtonState.Pressed)
+        {
+            xButton = true;
+        }
+        if (prevState.Buttons.Y == ButtonState.Released && state.Buttons.Y == ButtonState.Pressed)
+        {
+            yButton = true;
+        }
+    }
+    private void CheckForButtonRelease() // check if a button is released this frame
+    {
+        //shoulders
+        if (prevState.Buttons.LeftShoulder == ButtonState.Pressed && state.Buttons.LeftShoulder == ButtonState.Released)
+        {
+            leftShoulder = false;
+        }
+        if (prevState.Buttons.RightShoulder == ButtonState.Pressed && state.Buttons.RightShoulder == ButtonState.Released)
+        {
+            rightShoulder = false;
+        }
+
+        if (prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Released)
+        {
+            aButton = false;
+        }
+        if (prevState.Buttons.B == ButtonState.Pressed && state.Buttons.B == ButtonState.Released)
+        {
+            bButton = false;
+        }
+        if (prevState.Buttons.X == ButtonState.Pressed && state.Buttons.X == ButtonState.Released)
+        {
+            xButton = false;
+        }
+        if (prevState.Buttons.Y == ButtonState.Pressed && state.Buttons.Y == ButtonState.Released)
+        {
+            yButton = false;
+        }
     }
 
     public bool DeadZoneCheckRight()
@@ -103,6 +200,13 @@ public class Xbox360Wired_InputController : MonoBehaviour {
     {
         prevState = state;
         state = GamePad.GetState(playerIndex);
+    }
+
+    private float CalculateRotation(float X, float Y) // calculates angle based on incoming X & Y values;
+    {
+        float angle = Mathf.Atan2(X, Y) * Mathf.Rad2Deg;
+        //Debug.Log(angle);
+        return angle;
     }
 
     void OnGUI() //usefull for checking if everything works

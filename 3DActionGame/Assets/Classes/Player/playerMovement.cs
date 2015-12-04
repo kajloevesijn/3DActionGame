@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class playerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour {
     private Xbox360Wired_InputController controller;
     private CharacterController characterController;
     private Vector3 moveDirection = Vector3.zero;
@@ -58,7 +58,7 @@ public class playerMovement : MonoBehaviour {
             //moveDirection *= -currentMovementSpeed;// sets speed
         }
 
-        moveDirection.y -= 10 * Time.deltaTime; // gravity
+        moveDirection.y -= 30 * Time.deltaTime; // gravity
         characterController.Move(moveDirection * currentMovementSpeed * Time.deltaTime);
 
         //how can i move in a direction without changing the actual rotation of an object (using rigidbody) or rotate without affecting the child objects.
