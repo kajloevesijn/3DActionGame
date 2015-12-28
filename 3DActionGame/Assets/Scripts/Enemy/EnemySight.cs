@@ -3,44 +3,89 @@ using System.Collections;
 
 public class EnemySight : MonoBehaviour
 {
-    /*[Range(0.1f, 10f)]
-    public float radius;        //radius
+    public float viewAngle = 110f;
+    public bool playerInSight;
+    public Vector3 lastSighting;
 
-    [Range(1f, 360f)]
-    public float fov = 90;      //field of view - 90 degrees
+    private Vector3 previousSighting;
 
-    public Vector3 direction = Vector3.forward;
+    private NavMeshAgent _nav;
+    private SphereCollider _sphereCol;
 
-    //used to test the field of view
-    public Transform testPoint;
-    private Vector3 leftLineFOV;
-    private Vector3 rightLineFOV;
-    private Vector3 
+    private GameObject _player;
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        if(testPoint != null)
-        {
-            rightLineFOV = RotatePointAroundTransform(direction.normalized * radius, -fov / 2);
-            leftLineFOV = RotatePointAroundTransform(direction.normalized * radius, fov / 2);
-            Debug.Log(InsideFOV(new Vector3(testPoint.position.x, testPoint.position.y, testPoint.position.z)));
-        }
+        _nav = GetComponent<NavMeshAgent>();
+        _sphereCol = GetComponent<SphereCollider>();
+        _player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    public bool InsideFOV(Vector3 playerPosition)
+    void Update()
     {
-        float squaredDistance = ( (playerPosition.x - transform.position.x) * (playerPosition.x - transform.position.x)
-                                + (playerPosition.y - transform.position.y) * (playerPosition.y - transform.position.y)
-                                + (playerPosition.z - transform.position.z) * (playerPosition.z - transform.position.z)
-                                );
-        Debug.Log(squaredDistance);
 
-        if (radius * radius >= squaredDistance)
+    }
+
+    //works
+    void OnTriggerStay(Collider other)
+    {
+        //in collider
+        if (other.gameObject == _player)
         {
-            float signLeftLine = (leftLineFOV.x)
+            playerInSight = false;
+            Vector3 direction = other.transform.position - transform.position;
+            float angle = Vector3.Angle(direction, transform.forward);
+
+            //in line of sight
+            if (angle < viewAngle * 0.5f)
+            {
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, direction.normalized, out hit, _sphereCol.radius))
+                {
+                    if(hit.collider.gameObject == _player)
+                    {
+                        playerInSight = true;
+                        lastSighting = _player.transform.position;
+                    }
+                }
+            }
+
+            //when enemy hears the player
+            /*if(_player.speed > 5 || playerInSight.IsShooting)
+            {
+                if (CreatePath(_player.transform.position) <= _sphereCol.radius)
+                {
+                    lastSighting = _player.transform.position;
+                }
+            }*/
+        }
+    }
+    
+    
+    float CreatePath(Vector3 targetPosition)
+    {
+        NavMeshPath path = new NavMeshPath();
+
+        if (_nav.enabled)
+            _nav.CalculatePath(targetPosition, path);
+        Vector3[] allWayPoints = new Vector3[path.corners.Length + 2];
+
+        allWayPoints[0] = transform.position;
+        allWayPoints[allWayPoints.Length - 1] = targetPosition;
+
+        for (int i = 0; i < path.corners.Length; i++)
+        {
+            allWayPoints[i + 1] = path.corners[i];
         }
 
-        return false;
-    }*/
+        float pathLength = 0f;
+
+        for (int i = 0; i < allWayPoints.Length - 1; i++)
+        {
+            pathLength += Vector3.Distance(allWayPoints[i], allWayPoints[i + 1]);
+        }
+
+        return pathLength;
+    } 
 }
+
