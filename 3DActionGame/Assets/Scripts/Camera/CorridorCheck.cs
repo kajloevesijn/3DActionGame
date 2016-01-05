@@ -6,7 +6,7 @@ public class CorridorCheck : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("fuck");
+        Debug.Log("fuck");
         if(other.gameObject.tag == "Corridor")
         {
             Debug.Log("ayy");

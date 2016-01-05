@@ -163,12 +163,12 @@ public class Xbox360Wired_InputController : MonoBehaviour {
         if (prevState.Triggers.Left <= triggerPressedSensitivity && leftTrigger == true)
         {
             leftTrigger = false;
-            //GetComponent<WeaponController>().ReleaseTrigger("leftWeapon");
+            GetComponent<WeaponController>().ReleaseTrigger("leftWeapon");
         }
         if (prevState.Triggers.Right <= triggerPressedSensitivity && rightTrigger == true)
         {
             rightTrigger = false;
-            //GetComponent<WeaponController>().ReleaseTrigger("rightWeapon");
+            GetComponent<WeaponController>().ReleaseTrigger("rightWeapon");
         }
 
         if (prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Released)
@@ -236,7 +236,7 @@ public class Xbox360Wired_InputController : MonoBehaviour {
 
     private float CalculateRotation(float X, float Y) // calculates angle based on incoming X & Y values;
     {
-        float angle = Mathf.Atan2(X, Y) * Mathf.Rad2Deg;
+        float angle = (Mathf.Atan2(X, Y) * Mathf.Rad2Deg);
         //Debug.Log(angle);
         return angle;
     }
