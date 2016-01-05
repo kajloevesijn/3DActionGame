@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3347510}
   - 65: {fileID: 6505266}
   - 23: {fileID: 2334726}
-  - 114: {fileID: 11476400}
+  - 114: {fileID: 11443262}
   m_Layer: 0
   m_Name: EnemyPH
   m_TagString: Untagged
@@ -76,7 +76,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &11476400
+--- !u!114 &11443262
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -84,16 +84,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 127108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dfd57696f13ea049aff98fb6fbedc74, type: 3}
+  m_Script: {fileID: 11500000, guid: e3d5236e51ebc5d43b782c95669706a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _target: {fileID: 101912, guid: ec0a164b4a6bcf443944990f7f6bef8b, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 101912, guid: ec0a164b4a6bcf443944990f7f6bef8b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 127108}
