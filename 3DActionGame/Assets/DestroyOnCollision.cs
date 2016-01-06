@@ -12,6 +12,7 @@ public class DestroyOnCollision : MonoBehaviour
             if (other.gameObject.tag == tags[i])
             {
                 GetComponent<ChildDecoupler>().DeCoupler();
+                GetComponent<ParticlePrefabSpawner>().SpawnParticleFromList(0, transform);
                 Destroy(this.gameObject);
                 break;
             }
