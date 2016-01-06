@@ -3,12 +3,12 @@ using System.Collections;
 
 public class BodyPartRotation : MonoBehaviour {
     [SerializeField]private bool isupperBody; // using this script for upper body? set this true otherwise false
-    [SerializeField]private bool islowerBody; // using this script for lower body? set this true otherwise false
-    [SerializeField]private Xbox360Wired_InputController controller; //store controller from parentObj in here
+    [SerializeField]private bool islowerBody; // using this script for lower body? set this true otherwise falseaa
     [SerializeField]private GameObject parent;
     [SerializeField]private float rotationSpeed;
     private float LeftAngle; // for storing left stick angle, probably can store it in another class?
     private float rightAngle;// for storing right stick angle.
+	private Xbox360Wired_InputController controller; //store controller from parentObj in here
 
     void Start()
     {

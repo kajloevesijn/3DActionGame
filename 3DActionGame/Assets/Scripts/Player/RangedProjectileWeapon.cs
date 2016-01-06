@@ -10,6 +10,7 @@ public class RangedProjectileWeapon : WeaponBase
     [SerializeField]
     private float currentAngleOffset;
 	[SerializeField]private ParticleSystem muzzleFlash;
+	[SerializeField]private ParticleSystem muzzleSmoke;
 
     // behaviour Modifiers
     [SerializeField]
@@ -86,17 +87,14 @@ public class RangedProjectileWeapon : WeaponBase
                 {
                     if (isAutomatic)
                     {
+						MuzzleEffects();
                         Fire();
                     }
                     else
                     {
+						MuzzleEffects();
                         ManualFire();
                     }
-					if(muzzleFlash != null){
-					Instantiate(muzzleFlash,muzzlePosition.transform.position,Quaternion.identity);
-					}else{
-					Debug.Log("no muzzleflash reference");
-					}
                 }
             }
         }
@@ -172,4 +170,13 @@ public class RangedProjectileWeapon : WeaponBase
     {
         return Random.Range(min, max);
     }
+
+	private void MuzzleEffects(){
+		if(muzzleFlash != null){
+			Instantiate(muzzleFlash,muzzlePosition.transform.position,muzzlePosition.transform.rotation);
+			Instantiate(muzzleSmoke,muzzlePosition.transform.position,Quaternion.identity);
+		}else{
+			Debug.Log("no muzzleflash reference");
+		}
+	}
 }
