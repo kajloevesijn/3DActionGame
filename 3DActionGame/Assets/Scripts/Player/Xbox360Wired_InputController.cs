@@ -153,6 +153,7 @@ public class Xbox360Wired_InputController : MonoBehaviour {
 		{
 			leftStickButton = true;
             GetComponent<PlayerMovement>().boost = true;
+            GetComponent<PlayerMovement>().boostHalt = false;
 		}
 	}
 	private void CheckForButtonRelease() // check if a button is released this frame

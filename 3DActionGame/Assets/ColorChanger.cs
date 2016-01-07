@@ -46,7 +46,6 @@ public class ColorChanger : MonoBehaviour
 		float lerp = Mathf.PingPong (Time.time, 1);
 		_newColor = Color.Lerp (_colorList[colorIndexA], _colorList[colorIndexB], lerp);
 
-		Debug.Log(colorIndexA);
 		_meshRenderer.material.color = _newColor;
 	}
 }

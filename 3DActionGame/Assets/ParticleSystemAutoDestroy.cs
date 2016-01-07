@@ -10,7 +10,7 @@ public class ParticleSystemAutoDestroy : MonoBehaviour {
         emitter = this.gameObject.GetComponent<ParticleSystem>();
 	}
 	void FixedUpdate() {
-        if (emitter.particleCount <= 0)
+        if (emitter.particleCount == 0 && Time.time >= destroyDelay)
         {
             Destroy(this.gameObject);
         }
