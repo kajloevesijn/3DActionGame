@@ -174,7 +174,7 @@ public class RangedProjectileWeapon : WeaponBase
 	private void MuzzleEffects(){
 		if(muzzleFlash != null){
 			Instantiate(muzzleFlash,muzzlePosition.transform.position,muzzlePosition.transform.rotation);
-			Instantiate(muzzleSmoke,muzzlePosition.transform.position,Quaternion.identity);
+            Instantiate(muzzleSmoke, muzzlePosition.transform.position, muzzlePosition.transform.rotation);
 		}else{
 			Debug.Log("no muzzleflash reference");
 		}

@@ -152,6 +152,7 @@ public class Xbox360Wired_InputController : MonoBehaviour {
 		if (prevState.Buttons.LeftStick == ButtonState.Released && state.Buttons.LeftStick == ButtonState.Pressed)
 		{
 			leftStickButton = true;
+            GetComponent<PlayerMovement>().boost = true;
 		}
 	}
 	private void CheckForButtonRelease() // check if a button is released this frame
