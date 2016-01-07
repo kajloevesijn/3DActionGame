@@ -22,8 +22,10 @@ public class SpawnEnemies : MonoBehaviour
         //let it loop
         while (true)
         {
-            //picks random spawnpoint
+            //picks random spawnpoint and instantiate
             GameObject enemyClone = (GameObject)Instantiate(enemyUnit, spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position, Quaternion.identity);
+
+            //change spawndelay value for increased difficulty
 
             //wait for new spawn
             yield return new WaitForSeconds(_spawnDelay);
