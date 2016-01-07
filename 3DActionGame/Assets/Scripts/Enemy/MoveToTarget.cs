@@ -13,7 +13,7 @@ public class MoveToTarget : MonoBehaviour
         //build in function to look at (the target)
         transform.LookAt(_target.transform.position);
 
-        //when distance between this and target is bigger or equal to
+        //when distance between me and target is bigger or equal to
         if (Vector3.Distance(transform.position, _target.transform.position) >= _minDistance)
         {
             //move to target
