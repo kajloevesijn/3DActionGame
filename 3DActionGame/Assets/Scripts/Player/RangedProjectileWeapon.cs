@@ -53,19 +53,19 @@ public class RangedProjectileWeapon : WeaponBase
         findPlayer();
         if (weaponAmmo <= 0 && isPickup == false)                                              //don't reload if object is not equipped, but weapon has to be equipped anyway to be able call this function
         {
-            if (ammoController.PlayerAmmo >= 1)                                                // checks if player has any ammo left
+            if (ammoController.playerAmmo >= 1)                                                // checks if player has any ammo left
             {
                 isReloading = true;                                                            // sets bool
                 reloadTimeStamp = Time.time + reloadTime;                                      // sets time when reload is "done"
-                if (ammoController.PlayerAmmo <= baseWeaponAmmo)                               // if contains less than maximum ammo of the clip, only remove what you can miss
+                if (ammoController.playerAmmo <= baseWeaponAmmo)                               // if contains less than maximum ammo of the clip, only remove what you can miss
                 {
-                    int ammoToBeAdded = ammoController.PlayerAmmo;                             // stores value in temporary var
+                    int ammoToBeAdded = ammoController.playerAmmo;                             // stores value in temporary var
                     weaponAmmo += ammoToBeAdded;                                               // adds ammo to the "clip" based on whats left
-                    ammoController.PlayerAmmo = ammoController.PlayerAmmo - ammoToBeAdded;     // should set ammo to 0
+                    ammoController.playerAmmo = ammoController.playerAmmo - ammoToBeAdded;     // should set ammo to 0
                 }
                 else
                 {
-                    ammoController.PlayerAmmo = ammoController.PlayerAmmo - baseWeaponAmmo;    // removes ammo
+                    ammoController.playerAmmo = ammoController.playerAmmo - baseWeaponAmmo;    // removes ammo
                     weaponAmmo = baseWeaponAmmo;                                               // adds ammo to the "clip"
                 }
             }
@@ -74,7 +74,7 @@ public class RangedProjectileWeapon : WeaponBase
                 Debug.Log("you have no ammo of that type left");
             }
         }
-        Debug.Log(ammoController.PlayerAmmo);
+        Debug.Log(ammoController.playerAmmo);
     }
 
     public void Attack()
@@ -108,7 +108,7 @@ public class RangedProjectileWeapon : WeaponBase
     {
         if (weaponAmmo != baseWeaponAmmo)                                                       // you can't reload if ammo is full
         {
-            ammoController.PlayerAmmo = ammoController.PlayerAmmo + weaponAmmo;                 // adds clip ammo to player total
+            ammoController.playerAmmo = ammoController.playerAmmo + weaponAmmo;                 // adds clip ammo to player total
             weaponAmmo = 0;
         }
         ReloadSequence();

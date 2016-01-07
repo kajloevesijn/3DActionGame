@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PosShift : MonoBehaviour {
-	public const float shiftMultiplier = 5f;
+	[SerializeField]public float shiftMultiplier = 5f;
 	[SerializeField]private GameObject _player;
 	private Transform _neutralPos;
 	private float _stickX;
