@@ -87,12 +87,10 @@ public class RangedProjectileWeapon : WeaponBase
                 {
                     if (isAutomatic)
                     {
-						MuzzleEffects();
                         Fire();
                     }
                     else
                     {
-						MuzzleEffects();
                         ManualFire();
                     }
                 }
@@ -137,6 +135,7 @@ public class RangedProjectileWeapon : WeaponBase
         {
             createBullet();
         }
+		MuzzleEffects();
         weaponAmmo--; // enable it later
         if (weaponAmmo <= 0)                                                        // reloads weapon for you if you hit 0 after firing
         {
@@ -163,7 +162,7 @@ public class RangedProjectileWeapon : WeaponBase
 
     private void ResetAngleOffset()
     {
-        currentAngleOffset = -(BulletSpacing * projectileAmount) / 2; //create offset based on total rotation to be made
+        currentAngleOffset = -(((BulletSpacing * projectileAmount) * .5f)+ BulletSpacing/2); //create offset based on total rotation to be made
     }
 
     private float returnRandom(float min, float max)
@@ -173,10 +172,10 @@ public class RangedProjectileWeapon : WeaponBase
 
 	private void MuzzleEffects(){
 		if(muzzleFlash != null){
-			Instantiate(muzzleFlash,muzzlePosition.transform.position,muzzlePosition.transform.rotation);
+			//Instantiate(muzzleFlash,muzzlePosition.transform.position,muzzlePosition.transform.rotation);
             Instantiate(muzzleSmoke, muzzlePosition.transform.position, muzzlePosition.transform.rotation);
 		}else{
-			Debug.Log("no muzzleflash reference");
+			Debug.Log("no muzzle reference");
 		}
 	}
 }

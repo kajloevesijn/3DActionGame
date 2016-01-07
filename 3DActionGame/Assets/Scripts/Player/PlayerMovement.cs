@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     private float currentMovementSpeed;
     [SerializeField]
     private float BoostSpeed;
-    [SerializeField]
+	[SerializeField]
     private float boostFallOff;
 
     // Use this for initialization
@@ -129,6 +129,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             //maxMovementSpeed = maxMovementSpeed * (Time.deltaTime * boostFallOff); // decreases speed over time
+
             maxMovementSpeed = maxMovementSpeed * boostFallOff;
         }
 
