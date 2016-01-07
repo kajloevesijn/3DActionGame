@@ -35,6 +35,7 @@ public class Xbox360Wired_InputController : MonoBehaviour {
     private bool xButton = false;
     private bool yButton = false;
 
+	private bool leftStickButton = false;
 
     // Use this for initialization
     void Start () {
@@ -147,8 +148,15 @@ public class Xbox360Wired_InputController : MonoBehaviour {
         {
             yButton = true;
         }
-    }
-    private void CheckForButtonRelease() // check if a button is released this frame
+
+		if (prevState.Buttons.LeftStick == ButtonState.Released && state.Buttons.LeftStick == ButtonState.Pressed)
+		{
+			leftStickButton = true;
+            GetComponent<PlayerMovement>().boost = true;
+            GetComponent<PlayerMovement>().boostHalt = false;
+		}
+	}
+	private void CheckForButtonRelease() // check if a button is released this frame
     {
         //shoulders
         if (prevState.Buttons.LeftShoulder == ButtonState.Pressed && state.Buttons.LeftShoulder == ButtonState.Released)
@@ -163,11 +171,13 @@ public class Xbox360Wired_InputController : MonoBehaviour {
         if (prevState.Triggers.Left <= triggerPressedSensitivity && leftTrigger == true)
         {
             leftTrigger = false;
+
             GetComponent<WeaponController>().ReleaseTrigger("leftWeapon");
         }
         if (prevState.Triggers.Right <= triggerPressedSensitivity && rightTrigger == true)
         {
             rightTrigger = false;
+
             GetComponent<WeaponController>().ReleaseTrigger("rightWeapon");
         }
 
@@ -187,9 +197,14 @@ public class Xbox360Wired_InputController : MonoBehaviour {
         {
             yButton = false;
         }
-    }
 
-    public bool DeadZoneCheckRight()
+		if (prevState.Buttons.LeftStick == ButtonState.Pressed && state.Buttons.LeftStick == ButtonState.Released)
+		{
+			leftStickButton = false;
+		}
+	}
+	
+	public bool DeadZoneCheckRight()
     {
         if (state.ThumbSticks.Right.X >= deadZoneAmount || state.ThumbSticks.Right.X <= -deadZoneAmount || state.ThumbSticks.Right.Y >= deadZoneAmount || state.ThumbSticks.Right.Y <= -deadZoneAmount)
         {

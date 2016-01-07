@@ -1,67 +1,84 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
     private Xbox360Wired_InputController controller;
     private CharacterController characterController;
     private Vector3 moveDirection = Vector3.zero;
-    [SerializeField]private float rotationSpeed;
-    [SerializeField]private float ccelerationSpeed;
-    [SerializeField]private float baseMovementSpeed;
-    [SerializeField]private float maxMovementSpeed;
-    [SerializeField]private float currentMaxMovementSpeed;
-    [SerializeField]private float currentMovementSpeed;
+
+    private float baseMaxMovementSpeed;
+    public bool boost = false;
+    public bool boostHalt;
+
+
+
+    private float timeStampBoost;
+    [SerializeField]
+    private float boostCooldownPeriod;
+    [SerializeField]
+    private float rotationSpeed;
+    [SerializeField]
+    private float accelerationSpeed;
+    [SerializeField]
+    private float baseMovementSpeed;
+    [SerializeField]
+    private float maxMovementSpeed;
+    [SerializeField]
+    private float currentMaxMovementSpeed;
+    [SerializeField]
+    private float currentMovementSpeed;
+    [SerializeField]
+    private float BoostSpeed;
+    [SerializeField]
+    private float boostFallOff;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         characterController = GetComponent<CharacterController>();
         controller = GetComponent<Xbox360Wired_InputController>();
+        baseMaxMovementSpeed = maxMovementSpeed; //sets where to fall back to when using the boost.
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         MoveCharacter();
-	}
+    }
 
     private void MoveCharacter()
     {
         DynamicSpeedControl();
-
+        Boost();
         if (controller.DeadZoneCheckLeft() == true)// only move if the controller is out of the deadzone
         {
-            moveDirection = new Vector3(controller.leftStickX, 0 , controller.leftStickY);
+            moveDirection = new Vector3(controller.leftStickX, 0, controller.leftStickY);
             moveDirection = transform.TransformDirection(moveDirection);
 
-            if(currentMovementSpeed <= currentMaxMovementSpeed)// for acceleration of the movement
+            if (currentMovementSpeed <= currentMaxMovementSpeed)// for acceleration of the movement
             {
-                currentMovementSpeed = currentMovementSpeed + (ccelerationSpeed * Time.deltaTime);
+                currentMovementSpeed = currentMovementSpeed + (accelerationSpeed * Time.deltaTime);
             }
-            else if(currentMovementSpeed >= maxMovementSpeed)
+            else if (currentMovementSpeed >= maxMovementSpeed)
             {
-                currentMovementSpeed = Mathf.Clamp(currentMovementSpeed,0,maxMovementSpeed);
+                currentMovementSpeed = Mathf.Clamp(currentMovementSpeed, 0, maxMovementSpeed);
             }
-
-            //moveDirection *= currentMovementSpeed;// sets speed
-
-            //characterController.Move(moveDirection * Time.deltaTime);
         }
         else// if the stick is not used deaccalerate
         {
-            if(currentMovementSpeed >= 0)
+            if (currentMovementSpeed >= 0)
             {
-                currentMovementSpeed = currentMovementSpeed - (ccelerationSpeed * Time.deltaTime); // for deccelerating of the movements
+                currentMovementSpeed = currentMovementSpeed - (accelerationSpeed * Time.deltaTime); // for deccelerating of the movements
             }
             if (currentMovementSpeed <= 0)
             {
                 currentMovementSpeed = 0;
             }
-            //moveDirection *= -currentMovementSpeed;// sets speed
         }
 
         moveDirection.y -= 30 * Time.deltaTime; // gravity
         characterController.Move(moveDirection * currentMovementSpeed * Time.deltaTime);
-
-        //how can i move in a direction without changing the actual rotation of an object (using rigidbody) or rotate without affecting the child objects.
     }
 
     private void DynamicSpeedControl()
@@ -86,6 +103,34 @@ public class PlayerMovement : MonoBehaviour {
 
     public void knockback()
     {
+
+    }
+
+    public void Boost() //maxspeed is changed by dynamic, doesn't work yet
+    {
+        if (boost && Time.time >= timeStampBoost) // boost the movement speed, set bool to false when boost is done
+        {
+            
+            if (boostHalt == false)
+            {
+                timeStampBoost = Time.time + boostCooldownPeriod; // sets cooldown
+                boostHalt = true;  //don't repeat this otherwise maxmove is stuck at 20
+                maxMovementSpeed = BoostSpeed; // sets new max speed for boost;
+            }
+        }
+        //maxMovementSpeed -= (Time.deltaTime * boostFallOff); // decreases speed over time
+        if (maxMovementSpeed <= baseMaxMovementSpeed) // if the speed fell of back to the base amount set previous maxspeed to normal and bool to false
+        {
+            maxMovementSpeed = baseMaxMovementSpeed; // set max back to normal
+            boost = false; // you aren't boosting anymore
+            boostHalt = false;  //you can set the boost speed aain
+
+        }
+        else
+        {
+            //maxMovementSpeed = maxMovementSpeed * (Time.deltaTime * boostFallOff); // decreases speed over time
+            maxMovementSpeed = maxMovementSpeed * boostFallOff;
+        }
 
     }
 }

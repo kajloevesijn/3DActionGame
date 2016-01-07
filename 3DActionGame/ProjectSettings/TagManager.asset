@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Corridor
   - Wall
+  - PlayerBullet
+  - Floor
+  - Ammo
   layers:
   - Default
   - TransparentFX
