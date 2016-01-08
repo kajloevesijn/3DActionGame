@@ -8,6 +8,13 @@ public class Xbox360Wired_InputController : MonoBehaviour {
 	private GamePadState state;
 	private GamePadState prevState;
 
+	//Objects to Affect
+	[SerializeField]private GameObject player;
+	[SerializeField]private GameObject camera;
+
+	//Project Specific (add vars for storing classes here)
+	private WeaponController weaponController;
+
     //behaviourModifiers
     [SerializeField]private float deadZoneAmount;
     [SerializeField]private float triggerPressedSensitivity;
@@ -39,7 +46,7 @@ public class Xbox360Wired_InputController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-
+		weaponController = player.GetComponent<WeaponController>();
 	}
 	
 	// Update is called once per frame
@@ -78,19 +85,19 @@ public class Xbox360Wired_InputController : MonoBehaviour {
     {
         if(leftShoulder == true)
         {
-            GetComponent<WeaponController>().ManualReload("leftWeapon");
+			weaponController.ManualReload("leftWeapon");
         }
         if (rightShoulder == true)
         {
-            GetComponent<WeaponController>().ManualReload("rightWeapon");
+			weaponController.ManualReload("rightWeapon");
         }
         if(leftTrigger == true)
         {
-            GetComponent<WeaponController>().Attack("leftWeapon");
+			weaponController.Attack("leftWeapon");
         }
         if(rightTrigger == true)
         {
-            GetComponent<WeaponController>().Attack("rightWeapon");
+			weaponController.Attack("rightWeapon");
         }
         if (aButton == true)
         {
@@ -152,8 +159,8 @@ public class Xbox360Wired_InputController : MonoBehaviour {
 		if (prevState.Buttons.LeftStick == ButtonState.Released && state.Buttons.LeftStick == ButtonState.Pressed)
 		{
 			leftStickButton = true;
-            GetComponent<PlayerMovement>().boost = true;
-            GetComponent<PlayerMovement>().boostHalt = false;
+			player.GetComponent<PlayerMovement>().boost = true;
+			player.GetComponent<PlayerMovement>().boostHalt = false;
 		}
 	}
 	private void CheckForButtonRelease() // check if a button is released this frame
@@ -172,13 +179,13 @@ public class Xbox360Wired_InputController : MonoBehaviour {
         {
             leftTrigger = false;
 
-            GetComponent<WeaponController>().ReleaseTrigger("leftWeapon");
+			weaponController.ReleaseTrigger("leftWeapon");
         }
         if (prevState.Triggers.Right <= triggerPressedSensitivity && rightTrigger == true)
         {
             rightTrigger = false;
 
-            GetComponent<WeaponController>().ReleaseTrigger("rightWeapon");
+			weaponController.ReleaseTrigger("rightWeapon");
         }
 
         if (prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Released)

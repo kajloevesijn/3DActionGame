@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        controller = GetComponent<Xbox360Wired_InputController>();
+		controller = GetComponent<FindController> ().GetController ();
         baseMaxMovementSpeed = maxMovementSpeed; //sets where to fall back to when using the boost.
     }
 
@@ -53,6 +53,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void MoveCharacter()
     {
+		if (controller == null) {
+			controller = GetComponent<FindController> ().GetController ();
+		}
         DynamicSpeedControl();
         Boost();
         if (controller.DeadZoneCheckLeft() == true)// only move if the controller is out of the deadzone
