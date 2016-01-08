@@ -7,7 +7,13 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController characterController;
     private Vector3 moveDirection = Vector3.zero;
 
+	private float baseMovementSpeed;
     private float baseMaxMovementSpeed;
+
+	private float boostFalloff;
+
+	private float currentMaxMovementSpeed;
+
     public bool boost = false;
     public bool boostHalt;
 
@@ -21,17 +27,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float accelerationSpeed;
     [SerializeField]
-    private float baseMovementSpeed;
-    [SerializeField]
     private float maxMovementSpeed;
-    [SerializeField]
-    private float currentMaxMovementSpeed;
     [SerializeField]
     private float currentMovementSpeed;
     [SerializeField]
     private float BoostSpeed;
 	[SerializeField]
-    private float boostFallOff;
+    private float boostFallOffSpeed;
+	[SerializeField]
+	private float stickSensitivity;
 
     // Use this for initialization
     void Start()
@@ -60,10 +64,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 currentMovementSpeed = currentMovementSpeed + (accelerationSpeed * Time.deltaTime);
             }
-            else if (currentMovementSpeed >= maxMovementSpeed)
-            {
-                currentMovementSpeed = Mathf.Clamp(currentMovementSpeed, 0, maxMovementSpeed);
-            }
         }
         else// if the stick is not used deaccalerate
         {
@@ -76,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
                 currentMovementSpeed = 0;
             }
         }
-
+		currentMovementSpeed = Mathf.Clamp(currentMovementSpeed, 0, maxMovementSpeed);
         moveDirection.y -= 30 * Time.deltaTime; // gravity
         characterController.Move(moveDirection * currentMovementSpeed * Time.deltaTime);
     }
@@ -85,19 +85,19 @@ public class PlayerMovement : MonoBehaviour
     {
         if (controller.leftStickX >= .1f)
         {
-            currentMaxMovementSpeed = maxMovementSpeed * controller.leftStickX; // do this so max movement speed is based on how far you push the stick
+			currentMaxMovementSpeed = maxMovementSpeed * (controller.leftStickX * stickSensitivity); // do this so max movement speed is based on how far you push the stick
         }
         else if (controller.leftStickX <= -.1f)
         {
-            currentMaxMovementSpeed = -maxMovementSpeed * controller.leftStickX; // multiplying by negatives makes positives
+			currentMaxMovementSpeed = -maxMovementSpeed * (controller.leftStickX * stickSensitivity); // multiplying by negatives makes positives
         }
         if (controller.leftStickY >= .1f)
         {
-            currentMaxMovementSpeed = maxMovementSpeed * controller.leftStickY; // do this so max movement speed is based on how far you push the stick
+			currentMaxMovementSpeed = maxMovementSpeed * (controller.leftStickY * stickSensitivity); // do this so max movement speed is based on how far you push the stick
         }
         else if (controller.leftStickY <= -.1f)
         {
-            currentMaxMovementSpeed = -maxMovementSpeed * controller.leftStickY; // multiplying by negatives makes positives
+			currentMaxMovementSpeed = -maxMovementSpeed * (controller.leftStickY * stickSensitivity); // multiplying by negatives makes positives
         }
     }
 
@@ -129,8 +129,9 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             //maxMovementSpeed = maxMovementSpeed * (Time.deltaTime * boostFallOff); // decreases speed over time
-
-            maxMovementSpeed = maxMovementSpeed * boostFallOff;
+			boostFalloff = Time.deltaTime * (boostFallOffSpeed * Time.smoothDeltaTime);
+			Debug.Log(boostFalloff);
+			maxMovementSpeed -= Time.smoothDeltaTime * boostFallOffSpeed;
         }
 
     }
