@@ -68,7 +68,6 @@ namespace UnityStandardAssets.ImageEffects
             currentViewProjMat = projMat * viewMat;
         }
 
-
         new void Start () {
             CheckResources ();
 
