@@ -13,6 +13,7 @@ GameObject:
   - 23: {fileID: 2314442}
   - 54: {fileID: 5435374}
   - 114: {fileID: 11423978}
+  - 114: {fileID: 11470178}
   m_Layer: 0
   m_Name: EnemyPH
   m_TagString: Enemy
@@ -78,7 +79,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 32
   m_CollisionDetection: 0
 --- !u!65 &6527070
 BoxCollider:
@@ -103,7 +104,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d5236e51ebc5d43b782c95669706a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target: {fileID: 101912, guid: ec0a164b4a6bcf443944990f7f6bef8b, type: 2}
+  _target: {fileID: 140334, guid: 63eda648fa27dcc48affbacb958a2608, type: 2}
+--- !u!114 &11470178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa78e3e8c569a44783cd664533db4d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -130,6 +142,14 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _target
+      value: 
+      objectReference: {fileID: 140334, guid: 63eda648fa27dcc48affbacb958a2608, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Constraints
+      value: 32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
