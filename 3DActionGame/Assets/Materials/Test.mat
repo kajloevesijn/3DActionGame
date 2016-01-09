@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: New Material
+  m_Name: Test
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION _NORMALMAP
+  m_ShaderKeywords: _EMISSION _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -19,14 +19,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 41485312e6c98eb4b915d57f0edb7945, type: 3}
-          m_Scale: {x: 16, y: 16}
+          m_Texture: {fileID: 2800000, guid: 72a1f676c2f454a4ba5597a64edd9904, type: 3}
+          m_Scale: {x: 16, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: 75bfa010f8fe1a94ab14c50988e39224, type: 3}
+          m_Texture: {fileID: 2800000, guid: 72b1d685dc2b8a84dba9bc4f40157d0b, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -40,7 +40,7 @@ Material:
         first:
           name: _ParallaxMap
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 975e62f083bbb4743a3a1eb2b6af9e02, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -54,8 +54,8 @@ Material:
         first:
           name: _EmissionMap
         second:
-          m_Texture: {fileID: 2800000, guid: 529239097d02f9f42b0ddd436c6fcbb0, type: 3}
-          m_Scale: {x: 16, y: 16}
+          m_Texture: {fileID: 2800000, guid: 1e558681b75882942b49318a015731d8, type: 3}
+          m_Scale: {x: 16, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -69,7 +69,7 @@ Material:
           name: _DetailAlbedoMap
         second:
           m_Texture: {fileID: 0}
-          m_Scale: {x: 16, y: 16}
+          m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -102,7 +102,7 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: .356999993
+        second: .633000016
       data:
         first:
           name: _BumpScale
@@ -126,12 +126,12 @@ Material:
       data:
         first:
           name: _Metallic
-        second: .612999976
+        second: 0
     m_Colors:
       data:
         first:
           name: _EmissionColor
-        second: {r: 0, g: .45588237, b: .45588237, a: 1}
+        second: {r: .200000003, g: 0, b: 0, a: 1}
       data:
         first:
           name: _Color

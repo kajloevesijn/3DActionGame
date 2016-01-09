@@ -18,7 +18,10 @@ public class CollisionController : MonoBehaviour {
     }
 
 	void OnTriggerEnter(Collider other){
+<<<<<<< HEAD
 		//Debug.Log ("ayy");
+=======
+>>>>>>> a56e7d33a2ef2b1558ce133171fc69455d3febea
 		if (other.tag == "Ammo") {
 			GetComponent<AmmoController>().playerAmmo += other.gameObject.GetComponent<AmmoBox>().AmmoPickup();
 			Debug.Log(GetComponent<AmmoController>().playerAmmo);

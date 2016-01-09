@@ -9,7 +9,11 @@ TagManager:
   - PlayerBullet
   - Floor
   - Ammo
+<<<<<<< HEAD
   - Enemy
+=======
+  - Controller
+>>>>>>> a56e7d33a2ef2b1558ce133171fc69455d3febea
   layers:
   - Default
   - TransparentFX
@@ -20,8 +24,13 @@ TagManager:
   - 
   - 
   - BulletParticles
+<<<<<<< HEAD
   - Enemy
   - 
+=======
+  - PointLightShadow
+  - IgnoreShadow
+>>>>>>> a56e7d33a2ef2b1558ce133171fc69455d3febea
   - 
   - 
   - 

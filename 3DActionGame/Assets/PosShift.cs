@@ -35,7 +35,7 @@ public class PosShift : MonoBehaviour {
 
 	void GetRightStickValue(){
 		if (_getStick == null) {
-			_getStick = _player.GetComponent<Xbox360Wired_InputController> ();
+			_getStick = _player.GetComponent<FindController> ().GetController();
 		} else {
 			_stickX = _getStick.rightStickX;
 			_stickY = _getStick.rightStickY;

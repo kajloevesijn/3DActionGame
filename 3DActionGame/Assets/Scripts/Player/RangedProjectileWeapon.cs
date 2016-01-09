@@ -34,7 +34,6 @@ public class RangedProjectileWeapon : WeaponBase
     void Update()
     {
         CheckBools();
-        //Debug.Log(BulletSpacing);
     }
     private void CheckBools()
     {
@@ -51,30 +50,13 @@ public class RangedProjectileWeapon : WeaponBase
     private void ReloadSequence()                                                              // reloads the weapon;
     {
         findPlayer();
-        if (weaponAmmo <= 0 && isPickup == false)                                              //don't reload if object is not equipped, but weapon has to be equipped anyway to be able call this function
-        {
-            if (ammoController.playerAmmo >= 1)                                                // checks if player has any ammo left
-            {
-                isReloading = true;                                                            // sets bool
-                reloadTimeStamp = Time.time + reloadTime;                                      // sets time when reload is "done"
-                if (ammoController.playerAmmo <= baseWeaponAmmo)                               // if contains less than maximum ammo of the clip, only remove what you can miss
-                {
-                    int ammoToBeAdded = ammoController.playerAmmo;                             // stores value in temporary var
-                    weaponAmmo += ammoToBeAdded;                                               // adds ammo to the "clip" based on whats left
-                    ammoController.playerAmmo = ammoController.playerAmmo - ammoToBeAdded;     // should set ammo to 0
-                }
-                else
-                {
-                    ammoController.playerAmmo = ammoController.playerAmmo - baseWeaponAmmo;    // removes ammo
-                    weaponAmmo = baseWeaponAmmo;                                               // adds ammo to the "clip"
-                }
-            }
-            else
-            {
-                Debug.Log("you have no ammo of that type left");
-            }
-        }
-        Debug.Log(ammoController.playerAmmo);
+        
+            if (ammoController.playerAmmo <= 1) {                                                // checks if player has any ammo left
+				isReloading = true;                                                            // sets bool
+				reloadTimeStamp = Time.time + reloadTime;
+				weaponAmmo = baseWeaponAmmo;
+			}
+			// sets time when reload is "done"
     }
 
     public void Attack()
@@ -87,12 +69,10 @@ public class RangedProjectileWeapon : WeaponBase
                 {
                     if (isAutomatic)
                     {
-						MuzzleEffects();
                         Fire();
                     }
                     else
                     {
-						MuzzleEffects();
                         ManualFire();
                     }
                 }
@@ -108,7 +88,6 @@ public class RangedProjectileWeapon : WeaponBase
     {
         if (weaponAmmo != baseWeaponAmmo)                                                       // you can't reload if ammo is full
         {
-            ammoController.playerAmmo = ammoController.playerAmmo + weaponAmmo;                 // adds clip ammo to player total
             weaponAmmo = 0;
         }
         ReloadSequence();
@@ -123,7 +102,7 @@ public class RangedProjectileWeapon : WeaponBase
         }
     }
 
-    public void Fire()
+    private void Fire()
     {
         if (multipleProjectiles)
         {
@@ -137,6 +116,7 @@ public class RangedProjectileWeapon : WeaponBase
         {
             createBullet();
         }
+		MuzzleEffects();
         weaponAmmo--; // enable it later
         if (weaponAmmo <= 0)                                                        // reloads weapon for you if you hit 0 after firing
         {
@@ -163,7 +143,7 @@ public class RangedProjectileWeapon : WeaponBase
 
     private void ResetAngleOffset()
     {
-        currentAngleOffset = -(BulletSpacing * projectileAmount) / 2; //create offset based on total rotation to be made
+        currentAngleOffset = -(((BulletSpacing * projectileAmount) * .5f)+ BulletSpacing/2); //create offset based on total rotation to be made
     }
 
     private float returnRandom(float min, float max)
@@ -173,10 +153,10 @@ public class RangedProjectileWeapon : WeaponBase
 
 	private void MuzzleEffects(){
 		if(muzzleFlash != null){
-			Instantiate(muzzleFlash,muzzlePosition.transform.position,muzzlePosition.transform.rotation);
+			//Instantiate(muzzleFlash,muzzlePosition.transform.position,muzzlePosition.transform.rotation);
             Instantiate(muzzleSmoke, muzzlePosition.transform.position, muzzlePosition.transform.rotation);
 		}else{
-			Debug.Log("no muzzleflash reference");
+			Debug.Log("no muzzle reference");
 		}
 	}
 }

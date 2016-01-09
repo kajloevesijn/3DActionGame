@@ -62,10 +62,7 @@ public class BodyPartRotation : MonoBehaviour {
 
     private void ControllerNullCheck()
     {
-        if(controller == null)
-        {
-            controller = parent.GetComponent<Xbox360Wired_InputController>();
-        }
+		controller = parent.GetComponent<FindController> ().GetController ();
     }
    private void CalculateAngle(float incomingRotation)
     {
