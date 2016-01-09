@@ -6,8 +6,10 @@ public class CameraObjectFollower : MonoBehaviour {
     [SerializeField]private GameObject corridorCheck;
     [SerializeField]private float dampeningSpeed;
     [SerializeField]private float cameraHeight; // should be zoomed in if player is in a corridor for le epic effect;
-	[SerializeField]private float minClamp;
-	[SerializeField]private float maxClamp;
+	[SerializeField]private float horMinClamp;// horizontal clamp values
+	[SerializeField]private float horMaxClamp;
+	[SerializeField]private float verMinClamp;//vertical clamp values
+	[SerializeField]private float verMaxClamp;
 
     private CorridorCheck check;
 
@@ -29,8 +31,11 @@ public class CameraObjectFollower : MonoBehaviour {
 			//point.z = Mathf.Clamp(transform.position.z,minClamp,maxClamp);
             Vector3 delta = target.position - GetComponent<Camera>().ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z));
             Vector3 destination = transform.position + delta;
-            destination.y = modifiedCameraHeight;
-            transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampeningSpeed);
+            //destination.y = modifiedCameraHeight;
+			float xClamp = Mathf.Clamp(destination.x,horMinClamp,horMaxClamp);
+			float zClamp = Mathf.Clamp(destination.z,verMinClamp,verMaxClamp);
+			Vector3 clampedCameraPos = new Vector3(xClamp,modifiedCameraHeight,zClamp);
+            transform.position = Vector3.SmoothDamp(transform.position, clampedCameraPos, ref velocity, dampeningSpeed);
         }
         if (check.isInCorridor)
         {

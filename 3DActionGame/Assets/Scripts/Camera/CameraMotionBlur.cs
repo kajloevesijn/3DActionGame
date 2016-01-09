@@ -134,7 +134,7 @@ namespace UnityStandardAssets.ImageEffects
             RenderTexture velBuffer = RenderTexture.GetTemporary (divRoundUp (source.width, velocityDownsample), divRoundUp (source.height, velocityDownsample), 0, rtFormat);
             int tileWidth = 1;
             int tileHeight = 1;
-            maxVelocity = Mathf.Max (2.0f, maxVelocity);
+            maxVelocity = Mathf.Max (5.0f, maxVelocity);
 
             float _maxVelocity = maxVelocity; // calculate 'k'
             // note: 's' is hardcoded in shaders except for DX11 path

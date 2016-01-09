@@ -47,6 +47,7 @@ public class Xbox360Wired_InputController : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		weaponController = player.GetComponent<WeaponController>();
+		leftStickButton = false;// NO WARNING TOLERANCE!!!!! so il just "use" it here
 	}
 	
 	// Update is called once per frame

@@ -3,17 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Corridor
-  - Wall
-  - PlayerBullet
-  - Floor
-  - Ammo
-<<<<<<< HEAD
-  - Enemy
-=======
-  - Controller
->>>>>>> a56e7d33a2ef2b1558ce133171fc69455d3febea
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -23,14 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - BulletParticles
-<<<<<<< HEAD
-  - Enemy
   - 
-=======
-  - PointLightShadow
-  - IgnoreShadow
->>>>>>> a56e7d33a2ef2b1558ce133171fc69455d3febea
+  - 
+  - 
   - 
   - 
   - 
