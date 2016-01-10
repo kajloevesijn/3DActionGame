@@ -151,11 +151,11 @@ GameObject:
   - 114: {fileID: 11443176}
   - 114: {fileID: 11427136}
   - 114: {fileID: 11457014}
-  - 114: {fileID: 11408012}
   - 114: {fileID: 11445874}
   - 114: {fileID: 11410238}
   - 65: {fileID: 6526976}
   - 114: {fileID: 11462392}
+  - 114: {fileID: 11409380}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5329,18 +5329,18 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
---- !u!114 &11408012
+--- !u!114 &11409380
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 105572}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa84c89caa317cb448108a955eb734bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ab3c9c1d23e4214da4d054a5cae7e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basePlayerAmmo: 1000
+  healthPoints: 10
 --- !u!114 &11410238
 MonoBehaviour:
   m_ObjectHideFlags: 1

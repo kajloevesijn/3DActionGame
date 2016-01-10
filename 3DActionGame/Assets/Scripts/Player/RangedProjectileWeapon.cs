@@ -51,7 +51,7 @@ public class RangedProjectileWeapon : WeaponBase
     {
         findPlayer();
         
-            if (ammoController.playerAmmo <= 1) {                                                // checks if player has any ammo left
+            if (weaponAmmo <= 1) {                                                // checks if player has any ammo left
 				isReloading = true;                                                            // sets bool
 				reloadTimeStamp = Time.time + reloadTime;
 				weaponAmmo = baseWeaponAmmo;

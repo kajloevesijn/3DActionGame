@@ -4,14 +4,15 @@ using System.Collections;
 public class ComboSystem : MonoBehaviour {
 	[SerializeField]private int currentCombo;
 	[SerializeField]private float comboFalloffTime = 1;
-	
+
+	private int highestCombo;
 	private float TimeStamp;
 	
 	void Start () {
 	
 	}
 	void Update () {
-		if (Time.time >= TimeStamp) {
+		if (Time.time >= TimeStamp && currentCombo > 0) {
 			DecreaseCombo();
 		}
 	}
@@ -32,6 +33,9 @@ public class ComboSystem : MonoBehaviour {
 	
 	public void IncreaseCombo(){
 		currentCombo++;
+		if (currentCombo > highestCombo) {
+			highestCombo = currentCombo;
+		}
 		UpdateComboTime ();
 	}
 }
