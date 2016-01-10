@@ -4,7 +4,7 @@ using System.Collections;
 public class Knockback : MonoBehaviour
 {
     private Rigidbody rb;
-    private float _knockbackForce = 10000;
+    private float _knockbackForce = 1000;
 
     // Use this for initialization
     void Start()
