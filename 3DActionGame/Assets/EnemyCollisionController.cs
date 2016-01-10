@@ -13,7 +13,7 @@ public class EnemyCollisionController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.tag == "Bullet") {
-			GetComponent<HealthController>().TakeDamage();
+			GetComponent<EnemyHealthController>().TakeDamage();
 
 		}
 	}

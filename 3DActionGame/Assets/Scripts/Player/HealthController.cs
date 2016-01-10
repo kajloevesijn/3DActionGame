@@ -4,11 +4,10 @@ using System.Collections;
 public class HealthController : MonoBehaviour
 {
 
-    [SerializeField]private int healthPoints = 10;
-
+    [SerializeField]protected int healthPoints = 10;
     public void TakeDamage()
     {
-        healthPoints--;//replace numbers with variables
+        healthPoints--;
 		if (healthPoints <= 0) {
 			this.gameObject.SetActive(false);
 		}
