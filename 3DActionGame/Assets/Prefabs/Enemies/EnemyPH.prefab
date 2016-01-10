@@ -128,7 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d8e9d01052582b4f91b1c6275452c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 3
+  deathParticles: {fileID: 19881156, guid: 921543401a5bfb846af2da35edba7d4c, type: 2}
+  healthPoints: 5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -162,7 +163,7 @@ Prefab:
       objectReference: {fileID: 105572, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
     - target: {fileID: 0}
       propertyPath: healthPoints
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_UseGravity
@@ -188,6 +189,11 @@ Prefab:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deathParticles
+      value: 
+      objectReference: {fileID: 19881156, guid: 921543401a5bfb846af2da35edba7d4c,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 159536}
