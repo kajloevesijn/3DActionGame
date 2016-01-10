@@ -3,21 +3,19 @@ using System.Collections;
 
 public class SpawnEnemies : MonoBehaviour
 {
-    public GameObject enemyUnit;
-    public GameObject _playerPos;
+    [SerializeField]private GameObject enemyUnit;
+    [SerializeField]private GameObject _playerPos;
 
     //private float _minimalRadius;
     //private float _maximalRadius;
-    private float _spawnRadius;
+    [SerializeField]private float _spawnRadius;
 
-    private float _spawnDelay;
+    [SerializeField]private float _spawnDelay;
 
 
     // Use this for initialization
     void Start ()
     {
-        _spawnDelay = 2;
-        _spawnRadius = 10;
 
         StartCoroutine(SpawnEnemy());
 	}

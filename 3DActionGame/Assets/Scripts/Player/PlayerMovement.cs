@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
+	[SerializeField]private ParticleSystem boostParticles;
+
     private Xbox360Wired_InputController controller;
     private CharacterController characterController;
     private Vector3 moveDirection = Vector3.zero;

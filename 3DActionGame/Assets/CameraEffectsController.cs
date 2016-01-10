@@ -36,7 +36,7 @@ public class CameraEffectsController : MonoBehaviour {
 
 		if (blurBuildup) { //adding blur strength
 			motionBlur.velocityScale += Time.deltaTime * motionBlurBuildup;
-			if(motionBlur.velocityScale >=0.99){
+			if(motionBlur.velocityScale >=.5f){
 				blurBuildup = false;
 			}
 		} else {// descreasing blur strength
