@@ -24,12 +24,9 @@ public class CameraObjectFollower : MonoBehaviour {
 	void Update () {
         if (target)
         {
-            Vector3 point = GetComponent<Camera>().WorldToViewportPoint(target.position);
-			//point.x = Mathf.Clamp(transform.position.x,minClamp,maxClamp); //stops camera from going out of the "level"
-			//point.z = Mathf.Clamp(transform.position.z,minClamp,maxClamp);
-            Vector3 delta = target.position - GetComponent<Camera>().ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z));
+            Vector3 point = GetComponent<Camera>().WorldToViewportPoint(target.position);//grab target worldPos
+            Vector3 delta = target.position - GetComponent<Camera>().ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); 
             Vector3 destination = transform.position + delta;
-            //destination.y = modifiedCameraHeight;
 			float xClamp = Mathf.Clamp(destination.x,horMinClamp,horMaxClamp);
 			float zClamp = Mathf.Clamp(destination.z,verMinClamp,verMaxClamp);
 			Vector3 clampedCameraPos = new Vector3(xClamp,modifiedCameraHeight,zClamp);

@@ -18,11 +18,6 @@ public class CollisionController : MonoBehaviour {
     }
 
 	void OnTriggerEnter(Collider other){
-		if (other.tag == "Ammo") {
-			GetComponent<AmmoController>().playerAmmo += other.gameObject.GetComponent<AmmoBox>().AmmoPickup();
-			Debug.Log(GetComponent<AmmoController>().playerAmmo);
-		}
-
 
         //tested explosionforce and it did not have the wanted outcome
         /*if (other.tag == "Enemy")
