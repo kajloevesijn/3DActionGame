@@ -190,7 +190,52 @@ Prefab:
       propertyPath: blurCooldown
       value: .5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11478670, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
+      propertyPath: maxBlurAmount
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11448682, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
+      propertyPath: redChannel.m_Curve.Array.data[1].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11448682, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
+      propertyPath: redChannel.m_Curve.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11448682, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
+      propertyPath: redChannel.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11448682, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
+      propertyPath: redChannel.m_Curve.Array.data[0].time
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11448682, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
+      propertyPath: saturation
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476686, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
+      propertyPath: shakeFalloff
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476686, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
+      propertyPath: shakeLength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476686, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
+      propertyPath: dampeningSpeed
+      value: .125
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478670, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
+      propertyPath: motionBlurBuildup
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478670, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
+      propertyPath: motionBlurFalloff
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11491352, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &266335091
@@ -351,6 +396,14 @@ Prefab:
     - target: {fileID: 12016694, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
       propertyPath: m_Positions.Array.data[1].z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434084, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: weaponShakeStrength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11463508, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: weaponShakeStrength
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
@@ -1579,20 +1632,20 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 169120, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
   m_PrefabInternal: {fileID: 139809061}
---- !u!114 &1183839737
+--- !u!114 &1183839728
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1183839726}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28039e3c626e18440a07c52baace8b54, type: 3}
+  m_Script: {fileID: 11500000, guid: 478a2083ad114a07d000fbfb8d76c639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shakeLength: 1
-  shakeStrength: 1
-  shakeStrengthReductiontSpeed: 1
+  shader: {fileID: 4800000, guid: e9ba2083ad114a07d000fbfb8d76c639, type: 3}
+  blurAmount: .800000012
+  extraBlur: 0
 --- !u!4 &1204203795 stripped
 Transform:
   m_PrefabParentObject: {fileID: 447024, guid: a077932c4b51b6045863db20cdaef011, type: 2}
