@@ -9,7 +9,8 @@ public class EnemyHealthController : HealthController {
 			GameObject player = GameObject.FindGameObjectWithTag("Player");
 			Instantiate(deathParticles,transform.position,Quaternion.identity);
 			player.GetComponent<ComboSystem>().IncreaseCombo();
-			this.gameObject.SetActive(false);
+			GetComponent<ChildDecoupler>().DeCoupler();
+			Destroy(this.gameObject);
 		}
 	}
 	//Private Functions
