@@ -27,7 +27,7 @@ public class SpawnEnemies : MonoBehaviour
         {
             //COULD
             //make random radius calculation
-            //_spawndomSRadius = RanpawnRadius();
+            //_spawnRadius = RandomSpawnRadius();
 
             //getting the center of the playerposition
             Vector3 center = _playerPos.transform.position;

@@ -3,21 +3,18 @@ using System.Collections;
 
 public class EnemyCollisionController : MonoBehaviour {
 
-	void Start () {
-	
-	}
-	
-	void Update () {
-	
+    private EnemyHealthController _enemyHealth;
+
+	void Start ()
+    {
+        _enemyHealth = GetComponent<EnemyHealthController>();
 	}
 
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.tag == "Bullet") {
-			GetComponent<EnemyHealthController>().TakeDamage();
-
-		}
+            _enemyHealth.TakeDamage();
+		} 
 	}
-	
 	//Private Functions
 	
 	
