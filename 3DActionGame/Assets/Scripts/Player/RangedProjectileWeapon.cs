@@ -3,6 +3,8 @@ using System.Collections;
 
 public class RangedProjectileWeapon : WeaponBase
 {
+	private GameObject camera;
+
     [SerializeField]
     private GameObject bullet;
     [SerializeField]
@@ -11,6 +13,7 @@ public class RangedProjectileWeapon : WeaponBase
     private float currentAngleOffset;
 	[SerializeField]private ParticleSystem muzzleFlash;
 	[SerializeField]private ParticleSystem muzzleSmoke;
+	[SerializeField]private float weaponShakeStrength;
 
     // behaviour Modifiers
     [SerializeField]
@@ -26,6 +29,7 @@ public class RangedProjectileWeapon : WeaponBase
     // Use this for initialization
     void Start()
     {
+		camera = GameObject.FindGameObjectWithTag ("MainCamera");
         findPlayer();
         ResetAngleOffset();
     }
@@ -117,6 +121,7 @@ public class RangedProjectileWeapon : WeaponBase
             createBullet();
         }
 		MuzzleEffects();
+		camera.GetComponent<CameraObjectFollower> ().shakeLength = weaponShakeStrength;
         weaponAmmo--; // enable it later
         if (weaponAmmo <= 0)                                                        // reloads weapon for you if you hit 0 after firing
         {

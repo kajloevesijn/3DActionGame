@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d40bea99abde0c240b74c3fa1ba4cb1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToInstantiate: {fileID: 159536, guid: f8035209be012944b8af7b5f3167cb64, type: 2}
+  objectToInstantiate: {fileID: 132006, guid: 45144054c5074f24cb1bce5519b25e2a, type: 2}
 --- !u!198 &19821048
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -4454,7 +4454,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: objectToInstantiate
       value: 
-      objectReference: {fileID: 159536, guid: f8035209be012944b8af7b5f3167cb64, type: 2}
+      objectReference: {fileID: 132006, guid: 45144054c5074f24cb1bce5519b25e2a, type: 2}
     - target: {fileID: 0}
       propertyPath: ColorModule.gradient.maxGradient.key3.rgba
       value: 16777215

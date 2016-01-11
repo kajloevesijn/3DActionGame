@@ -8,16 +8,17 @@ public class CameraEffectsController : MonoBehaviour {
 	[SerializeField]private float motionBlurFalloff;
 	[SerializeField]private float motionBlurBuildup;
 	[SerializeField]private float blurCooldown;
+	[SerializeField]private float maxBlurAmount;
 	private float blurTimeStamp;
 	private bool blurBuildup = false;
 	private bool startBlur;
 	private bool setBlurCooldown;// set it to the boost cooldown of player
 	private bool blurSwitch;
-	private CameraMotionBlur motionBlur;
+	private MotionBlur motionBlur;
 
 	// Use this for initialization
 	void Start () {
-		motionBlur = GetComponent<CameraMotionBlur> ();
+		motionBlur = GetComponent<MotionBlur> ();
 	}
 	
 	// Update is called once per frame
@@ -35,16 +36,16 @@ public class CameraEffectsController : MonoBehaviour {
 	private void MotionBlurRoutine(){
 
 		if (blurBuildup) { //adding blur strength
-			motionBlur.velocityScale += Time.deltaTime * motionBlurBuildup;
-			if(motionBlur.velocityScale >=.5f){
+			motionBlur.blurAmount += Time.deltaTime * motionBlurBuildup;
+			if(motionBlur.blurAmount >= maxBlurAmount){
 				blurBuildup = false;
 			}
 		} else {// descreasing blur strength
-			motionBlur.velocityScale -= Time.deltaTime * motionBlurFalloff;
+			motionBlur.blurAmount -= Time.deltaTime * motionBlurFalloff;
 		}
 
-		if (motionBlur.velocityScale <= 0 && !blurBuildup) { // if not increasing blur and velocity reaches 0 stop routine till triggered again
-			motionBlur.velocityScale = 0;
+		if (motionBlur.blurAmount <= 0 && !blurBuildup) { // if not increasing blur and velocity reaches 0 stop routine till triggered again
+			motionBlur.blurAmount = 0;
 			startBlur = false; //stops running this function in the update
 			motionBlur.enabled = false;
 		}

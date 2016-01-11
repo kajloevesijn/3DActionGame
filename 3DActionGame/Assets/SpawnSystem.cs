@@ -22,7 +22,7 @@ public class SpawnSystem : MonoBehaviour {
 			Vector3 spawnPos = RandomWorldPoint();
 			float distance = Vector3.Distance(playerPos,spawnPos);
 
-			while(_minSpawnDistance >= distance){
+			if(_minSpawnDistance >= distance){
 				spawnPos = RandomWorldPoint();
 			}
 
