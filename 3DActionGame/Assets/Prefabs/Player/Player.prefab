@@ -2007,6 +2007,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 481722}
   - 114: {fileID: 11434084}
+  - 120: {fileID: 12028768}
   m_Layer: 0
   m_Name: LeftWeapon
   m_TagString: Untagged
@@ -2189,6 +2190,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 444856}
   - 114: {fileID: 11463508}
+  - 120: {fileID: 12016694}
   m_Layer: 0
   m_Name: RightWeapon
   m_TagString: Untagged
@@ -5340,6 +5342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab3c9c1d23e4214da4d054a5cae7e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathParticles: {fileID: 19881156, guid: 921543401a5bfb846af2da35edba7d4c, type: 2}
   healthPoints: 10
 --- !u!114 &11410238
 MonoBehaviour:
@@ -5376,9 +5379,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 665af36d3e3d61c4d9f226e1ab9caccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponAmmo: 10
-  baseWeaponAmmo: 10
-  attackCooldownPeriod: .25
+  weaponAmmo: 2
+  baseWeaponAmmo: 2
+  attackCooldownPeriod: 1
   reloadTime: 4
   attackTimeStamp: 0
   reloadTimeStamp: 0
@@ -5392,11 +5395,11 @@ MonoBehaviour:
   currentAngleOffset: 0
   muzzleFlash: {fileID: 19833888, guid: 92f263d81d133e448bf3e45d1887e249, type: 2}
   muzzleSmoke: {fileID: 19809356, guid: 42daa699c9bd17546aa22f24a77d9f6a, type: 2}
-  bulletSpreadAmount: 3
-  multipleProjectiles: 0
-  projectileAmount: 3
-  BulletSpacing: 8
-  isShotgun: 0
+  bulletSpreadAmount: 15
+  multipleProjectiles: 1
+  projectileAmount: 5
+  BulletSpacing: 0
+  isShotgun: 1
 --- !u!114 &11440102
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5480,7 +5483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCombo: 0
-  comboFalloffTime: 1
+  comboFallOffTime: 1
 --- !u!114 &11463508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5492,9 +5495,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 665af36d3e3d61c4d9f226e1ab9caccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponAmmo: 10
-  baseWeaponAmmo: 10
-  attackCooldownPeriod: .25
+  weaponAmmo: 35
+  baseWeaponAmmo: 35
+  attackCooldownPeriod: .125
   reloadTime: 4
   attackTimeStamp: 0
   reloadTimeStamp: 0
@@ -5556,6 +5559,84 @@ MonoBehaviour:
   islowerBody: 1
   parent: {fileID: 105572}
   rotationSpeed: 10
+--- !u!120 &12016694
+LineRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187406}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d11fa55ddefe0cb419dcf91a849d9f37, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 10}
+  m_Parameters:
+    startWidth: .100000001
+    endWidth: .100000001
+    m_StartColor:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_EndColor:
+      serializedVersion: 2
+      rgba: 4294967295
+  m_UseWorldSpace: 0
+--- !u!120 &12028768
+LineRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181924}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: d11fa55ddefe0cb419dcf91a849d9f37, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 10}
+  m_Parameters:
+    startWidth: .100000001
+    endWidth: .100000001
+    m_StartColor:
+      serializedVersion: 2
+      rgba: 4294967295
+    m_EndColor:
+      serializedVersion: 2
+      rgba: 4294967295
+  m_UseWorldSpace: 0
 --- !u!120 &12091844
 LineRenderer:
   m_ObjectHideFlags: 1

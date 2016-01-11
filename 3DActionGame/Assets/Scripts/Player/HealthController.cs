@@ -3,13 +3,15 @@ using System.Collections;
 
 public class HealthController : MonoBehaviour
 {
+	[SerializeField]protected ParticleSystem deathParticles;
 
     [SerializeField]protected int healthPoints = 10;
     public void TakeDamage()
     {
         healthPoints--;
 		if (healthPoints <= 0) {
-			this.gameObject.SetActive(false);
+			Instantiate(deathParticles,transform.position,Quaternion.identity);
+			this.gameObject.SetActive(false); //kind of like destroying
 		}
     }
 }
