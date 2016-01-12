@@ -5376,7 +5376,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 36
   m_CollisionDetection: 0
 --- !u!65 &6535552
 BoxCollider:
@@ -5441,6 +5441,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d5236e51ebc5d43b782c95669706a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dashMovement: 1
+  _minDisForDash: 10
+  _maxDisForDash: 15
   playerDistance: 2
 --- !u!114 &11452410
 MonoBehaviour:
@@ -5489,6 +5492,10 @@ Prefab:
       value: 
       objectReference: {fileID: 19881156, guid: 921543401a5bfb846af2da35edba7d4c,
         type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Constraints
+      value: 36
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145188}

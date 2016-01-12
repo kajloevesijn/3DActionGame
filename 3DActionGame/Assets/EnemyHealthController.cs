@@ -2,11 +2,15 @@
 using System.Collections;
 
 public class EnemyHealthController : HealthController {
+	private GameObject player;
+
+	private void Start(){
+		player = GetComponent<FindPlayer> ().playerObject;
+	}
 	public void TakeDamage()
 	{
 		healthPoints--;
 		if (healthPoints <= 0) {
-			GameObject player = GameObject.FindGameObjectWithTag("Player");
 			Instantiate(deathParticles,transform.position,Quaternion.identity);
 			player.GetComponent<ComboSystem>().IncreaseCombo();
 			GetComponent<ChildDecoupler>().DeCoupler();

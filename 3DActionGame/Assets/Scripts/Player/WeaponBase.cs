@@ -26,24 +26,5 @@ public class WeaponBase : MonoBehaviour {//setting up some base variables for th
 
     protected AmmoController ammoController;
 
-    private bool playerFound = false;
-
-	void Update () {
-
-	}
-
-    protected void findPlayer()
-    {
-        if (ammoController == null)
-        {
-            playerFound = false;
-        }
-        if (!playerFound)
-        {
-            ammoController = GameObject.FindGameObjectWithTag("Player").GetComponent<AmmoController>();
-			if(ammoController == null){
-				Debug.Log("ayyy");
-			}
-        }
-    }
+    private bool playerFound = true;
 }

@@ -15,7 +15,7 @@ public class SpawnSystem : MonoBehaviour {
 	//Private Functions
 	private IEnumerator SpawnEnemy()
     {
-        while (true)
+        while (_player)
         {
             //wait for new spawn
 			Vector3 playerPos = _player.transform.position;
@@ -34,7 +34,7 @@ public class SpawnSystem : MonoBehaviour {
 	private Vector3 RandomWorldPoint(){
 		Vector3 randomWorldPoint;
 		randomWorldPoint.x = Random.Range (-_spawnArea, _spawnArea);
-		randomWorldPoint.y = 3f;
+		randomWorldPoint.y = 4f;
 		randomWorldPoint.z = Random.Range (-_spawnArea, _spawnArea);
 		return randomWorldPoint;
 	}

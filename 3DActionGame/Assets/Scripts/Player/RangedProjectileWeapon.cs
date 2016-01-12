@@ -30,7 +30,6 @@ public class RangedProjectileWeapon : WeaponBase
     void Start()
     {
 		camera = GameObject.FindGameObjectWithTag ("MainCamera");
-        findPlayer();
         ResetAngleOffset();
     }
 
@@ -53,8 +52,6 @@ public class RangedProjectileWeapon : WeaponBase
 
     private void ReloadSequence()                                                              // reloads the weapon;
     {
-        findPlayer();
-        
             if (weaponAmmo <= 1) {                                                // checks if player has any ammo left
 				isReloading = true;                                                            // sets bool
 				reloadTimeStamp = Time.time + reloadTime;
