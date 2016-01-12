@@ -3,42 +3,18 @@ using System.Collections;
 
 public class CollisionController : MonoBehaviour {
 
-    private float _knockBackRadius = 5;
-    private float _knockBackPower = 2500;
-
-    private Vector3 _knockBackPos; //where the knockback needs to take place
-
-    private Rigidbody rb;
-
+    HealthController _hc;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        _knockBackPos = transform.position;
+        _hc = GetComponent<HealthController>();
     }
 
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.name == "Enemy")//replace with tag class stuff
 		{
-			GetComponent<HealthController>().TakeDamage();
+            Debug.Log("enemy is touching me");
+            _hc.TakeDamage();
 		}
-        //tested explosionforce and it did not have the wanted outcome
-        /*if (other.tag == "Enemy")
-        {
-            Debug.Log("work1");
-            KnockBack();
-        }*/
 	}
-
-    /*void KnockBack()
-    {
-        Debug.Log("work2");
-        Collider[] colliders = Physics.OverlapSphere(_knockBackPos, _knockBackRadius);
-        foreach (Collider hit in colliders)
-        {
-            Debug.Log("work3");
-            rb.AddExplosionForce(_knockBackPower, _knockBackPos, _knockBackRadius, 0f);
-        }
-
-    }*/
 }

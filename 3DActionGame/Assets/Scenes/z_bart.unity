@@ -696,6 +696,8 @@ MonoBehaviour:
   horMaxClamp: 0
   verMinClamp: 0
   verMaxClamp: 0
+  shakeFalloff: 0
+  shakeLength: 0
 --- !u!114 &1183839733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1092,7 +1094,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc22f2406122ca4a8e60e02d71ebecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy: {fileID: 159536, guid: f8035209be012944b8af7b5f3167cb64, type: 2}
+  _enemies:
+  - {fileID: 169038, guid: 77b9e9456d453474592d26a36751096d, type: 2}
+  - {fileID: 145188, guid: df8b3cc070f5e9d4c9ee1532da04670f, type: 2}
+  - {fileID: 104420, guid: f4e923d70687c2146a91b3564b5fc272, type: 2}
   _player: {fileID: 105572, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
   _spawnDelay: 3
   _minSpawnDistance: 15

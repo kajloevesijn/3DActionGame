@@ -10,7 +10,7 @@ public class MoveToTarget : MonoBehaviour
     private float _maxSpeed = 15;
     private float _speedIncreaseDelay = 0.5f;
     
-    private float _minDistance = 2.5f;
+    private float _minDistance = 1f;
 
     private float _dashMovement = 1f;
     private float _minDisForDash = 10;

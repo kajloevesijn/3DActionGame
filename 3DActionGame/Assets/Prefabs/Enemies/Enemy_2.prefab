@@ -1239,12 +1239,12 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 455594}
-  - 54: {fileID: 5434570}
   - 65: {fileID: 6552526}
+  - 65: {fileID: 6535552}
+  - 54: {fileID: 5434570}
   - 114: {fileID: 11417368}
   - 114: {fileID: 11487162}
   - 114: {fileID: 11452410}
-  - 65: {fileID: 6535552}
   m_Layer: 0
   m_Name: Enemy_2
   m_TagString: Enemy
@@ -5376,7 +5376,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 36
   m_CollisionDetection: 0
 --- !u!65 &6535552
 BoxCollider:
@@ -5489,6 +5489,10 @@ Prefab:
       value: 
       objectReference: {fileID: 19881156, guid: 921543401a5bfb846af2da35edba7d4c,
         type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Constraints
+      value: 36
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145188}

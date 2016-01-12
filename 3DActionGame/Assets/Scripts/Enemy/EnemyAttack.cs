@@ -10,29 +10,23 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField]
     private GameObject _target;
 
-    private bool blabla = true;
+    private HealthController _doDamage;
 
 
     // Use this for initialization
     void Start()
     {
-        StartCoroutine(AttackPlayer());
+        //StartCoroutine(AttackPlayer());
         _target = GameObject.FindGameObjectWithTag("Player");
+        HealthController _doDamage = _target.GetComponent<HealthController>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    IEnumerator AttackPlayer()
+    
+    public IEnumerator AttackPlayer()
     {
         while (true)
         {
-            if (blabla)
-            {
-                yield return new WaitForSeconds(_attackDelay);
-            }      
+            _doDamage.TakeDamage();
+            yield return new WaitForSeconds(_attackDelay); 
         }
     }
 }
