@@ -84,132 +84,112 @@ public class Xbox360Wired_InputController : MonoBehaviour {
     }
     private void ButtonActions()
     {
-        if(leftShoulder == true)
-        {
-			weaponController.ManualReload("leftWeapon");
-        }
-        if (rightShoulder == true)
-        {
-			weaponController.ManualReload("rightWeapon");
-        }
-        if(leftTrigger == true)
-        {
-			weaponController.Attack("leftWeapon");
-        }
-        if(rightTrigger == true)
-        {
-			weaponController.Attack("rightWeapon");
-        }
-        if (aButton == true)
-        {
+		if (player) {
+			if (leftShoulder == true) {
+				weaponController.ManualReload ("leftWeapon");
+			}
+			if (rightShoulder == true) {
+				weaponController.ManualReload ("rightWeapon");
+			}
+			if (leftTrigger == true) {
+				weaponController.Attack ("leftWeapon");
+			}
+			if (rightTrigger == true) {
+				weaponController.Attack ("rightWeapon");
+			}
+			if (aButton == true) {
 
-        }
-        if (bButton == true)
-        {
+			}
+			if (bButton == true) {
 
-        }
-        if (xButton == true)
-        {
+			}
+			if (xButton == true) {
 
-        }
-        if (yButton == true)
-        {
+			}
+			if (yButton == true) {
 
-        }
+			}
+		}
     }
     private void CheckForButtonPress() // check if a button was pressed this frame
     {
         //shoulders
-        if (prevState.Buttons.LeftShoulder == ButtonState.Released && state.Buttons.LeftShoulder == ButtonState.Pressed)
-        {
-            leftShoulder = true;
-        }
-        if (prevState.Buttons.RightShoulder == ButtonState.Released && state.Buttons.RightShoulder == ButtonState.Pressed)
-        {
-            rightShoulder = true;
-        }
-        if (prevState.Triggers.Left >= triggerPressedSensitivity && leftTrigger == false)
-        {
-            leftTrigger = true;
-        }
-        if (prevState.Triggers.Right >= triggerPressedSensitivity && rightTrigger == false)
-        {
-            rightTrigger = true;
-        }
+		if (player) {
+			if (prevState.Buttons.LeftShoulder == ButtonState.Released && state.Buttons.LeftShoulder == ButtonState.Pressed) {
+				leftShoulder = true;
+			}
+			if (prevState.Buttons.RightShoulder == ButtonState.Released && state.Buttons.RightShoulder == ButtonState.Pressed) {
+				rightShoulder = true;
+			}
+			if (prevState.Triggers.Left >= triggerPressedSensitivity && leftTrigger == false) {
+				leftTrigger = true;
+			}
+			if (prevState.Triggers.Right >= triggerPressedSensitivity && rightTrigger == false) {
+				rightTrigger = true;
+			}
 
 
 
-        // buttons
-        if (prevState.Buttons.A == ButtonState.Released && state.Buttons.A == ButtonState.Pressed)
-        {
-            aButton = true;
-        }
-        if (prevState.Buttons.B == ButtonState.Released && state.Buttons.B == ButtonState.Pressed)
-        {
-            bButton = true;
-        }
-        if (prevState.Buttons.X == ButtonState.Released && state.Buttons.X == ButtonState.Pressed)
-        {
-            xButton = true;
-        }
-        if (prevState.Buttons.Y == ButtonState.Released && state.Buttons.Y == ButtonState.Pressed)
-        {
-            yButton = true;
-        }
+			// buttons
+			if (prevState.Buttons.A == ButtonState.Released && state.Buttons.A == ButtonState.Pressed) {
+				aButton = true;
+			}
+			if (prevState.Buttons.B == ButtonState.Released && state.Buttons.B == ButtonState.Pressed) {
+				bButton = true;
+			}
+			if (prevState.Buttons.X == ButtonState.Released && state.Buttons.X == ButtonState.Pressed) {
+				xButton = true;
+			}
+			if (prevState.Buttons.Y == ButtonState.Released && state.Buttons.Y == ButtonState.Pressed) {
+				yButton = true;
+			}
 
-		if (prevState.Buttons.LeftStick == ButtonState.Released && state.Buttons.LeftStick == ButtonState.Pressed)
-		{
-			leftStickButton = true;
-			player.GetComponent<PlayerMovement>().boost = true;
-			player.GetComponent<PlayerMovement>().boostHalt = false;
-			camera.GetComponent<CameraEffectsController>().startBlurRoutine();
+			if (prevState.Buttons.LeftStick == ButtonState.Released && state.Buttons.LeftStick == ButtonState.Pressed) {
+				leftStickButton = true;
+					player.GetComponent<PlayerMovement> ().boost = true;
+					player.GetComponent<PlayerMovement> ().boostHalt = false;
+					camera.GetComponent<CameraEffectsController> ().startBlurRoutine ();
+			}
 		}
 	}
 	private void CheckForButtonRelease() // check if a button is released this frame
     {
-        //shoulders
-        if (prevState.Buttons.LeftShoulder == ButtonState.Pressed && state.Buttons.LeftShoulder == ButtonState.Released)
-        {
-            leftShoulder = false;
-        }
-        if (prevState.Buttons.RightShoulder == ButtonState.Pressed && state.Buttons.RightShoulder == ButtonState.Released)
-        {
-            rightShoulder = false;
-        }
+		if (player) {
+			//shoulders
+			if (prevState.Buttons.LeftShoulder == ButtonState.Pressed && state.Buttons.LeftShoulder == ButtonState.Released) {
+				leftShoulder = false;
+			}
+			if (prevState.Buttons.RightShoulder == ButtonState.Pressed && state.Buttons.RightShoulder == ButtonState.Released) {
+				rightShoulder = false;
+			}
 
-        if (prevState.Triggers.Left <= triggerPressedSensitivity && leftTrigger == true)
-        {
-            leftTrigger = false;
+			if (prevState.Triggers.Left <= triggerPressedSensitivity && leftTrigger == true) {
+				leftTrigger = false;
 
-			weaponController.ReleaseTrigger("leftWeapon");
-        }
-        if (prevState.Triggers.Right <= triggerPressedSensitivity && rightTrigger == true)
-        {
-            rightTrigger = false;
+				weaponController.ReleaseTrigger ("leftWeapon");
+			}
+			if (prevState.Triggers.Right <= triggerPressedSensitivity && rightTrigger == true) {
+				rightTrigger = false;
 
-			weaponController.ReleaseTrigger("rightWeapon");
-        }
+				weaponController.ReleaseTrigger ("rightWeapon");
+			}
 
-        if (prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Released)
-        {
-            aButton = false;
-        }
-        if (prevState.Buttons.B == ButtonState.Pressed && state.Buttons.B == ButtonState.Released)
-        {
-            bButton = false;
-        }
-        if (prevState.Buttons.X == ButtonState.Pressed && state.Buttons.X == ButtonState.Released)
-        {
-            xButton = false;
-        }
-        if (prevState.Buttons.Y == ButtonState.Pressed && state.Buttons.Y == ButtonState.Released)
-        {
-            yButton = false;
-        }
+			if (prevState.Buttons.A == ButtonState.Pressed && state.Buttons.A == ButtonState.Released) {
+				aButton = false;
+			}
+			if (prevState.Buttons.B == ButtonState.Pressed && state.Buttons.B == ButtonState.Released) {
+				bButton = false;
+			}
+			if (prevState.Buttons.X == ButtonState.Pressed && state.Buttons.X == ButtonState.Released) {
+				xButton = false;
+			}
+			if (prevState.Buttons.Y == ButtonState.Pressed && state.Buttons.Y == ButtonState.Released) {
+				yButton = false;
+			}
 
-		if (prevState.Buttons.LeftStick == ButtonState.Pressed && state.Buttons.LeftStick == ButtonState.Released)
-		{
-			leftStickButton = false;
+			if (prevState.Buttons.LeftStick == ButtonState.Pressed && state.Buttons.LeftStick == ButtonState.Released) {
+				leftStickButton = false;
+			}
 		}
 	}
 	

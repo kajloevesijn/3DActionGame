@@ -5441,6 +5441,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d5236e51ebc5d43b782c95669706a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dashMovement: 1
+  _minDisForDash: 10
+  _maxDisForDash: 15
   playerDistance: 2
 --- !u!114 &11452410
 MonoBehaviour:

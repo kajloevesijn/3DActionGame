@@ -1785,12 +1785,12 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 449820}
-  - 65: {fileID: 6577900}
-  - 54: {fileID: 5425884}
+  - 114: {fileID: 11443396}
   - 114: {fileID: 11468666}
   - 114: {fileID: 11483386}
   - 114: {fileID: 11407498}
   - 114: {fileID: 11457694}
+  - 114: {fileID: 11430640}
   m_Layer: 0
   m_Name: Enemy_1
   m_TagString: Enemy
@@ -5250,7 +5250,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 36
@@ -5266,7 +5266,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: .289999992, z: 0}
 --- !u!95 &9515752
 Animator:
   serializedVersion: 3
@@ -5355,6 +5355,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba177ad1e95d6ee45ba0281600647f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11430640
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d027360fbdfe9374989e853d606890da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerDistance: 2
+--- !u!114 &11443396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3cd77f1641abf540a827cefc1767f3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObject: {fileID: 0}
 --- !u!114 &11457694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5378,7 +5402,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d5236e51ebc5d43b782c95669706a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dashMovement: 5
+  _minDisForDash: 10
+  _maxDisForDash: 15
   playerDistance: 2
+  attackDelay: .200000003
+  attackCooldown: 1
 --- !u!114 &11483386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6466,8 +6495,28 @@ Prefab:
       value: 
       objectReference: {fileID: 19807614}
     - target: {fileID: 0}
-      propertyPath: m_IsTrigger
+      propertyPath: _dashMovement
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: playerDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attackDelay
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attackCooldown
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
