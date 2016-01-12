@@ -162,7 +162,7 @@ public class Xbox360Wired_InputController : MonoBehaviour {
 			leftStickButton = true;
 			player.GetComponent<PlayerMovement>().boost = true;
 			player.GetComponent<PlayerMovement>().boostHalt = false;
-			//camera.GetComponent<CameraEffectsController>().startBlurRoutine();
+			camera.GetComponent<CameraEffectsController>().startBlurRoutine();
 		}
 	}
 	private void CheckForButtonRelease() // check if a button is released this frame

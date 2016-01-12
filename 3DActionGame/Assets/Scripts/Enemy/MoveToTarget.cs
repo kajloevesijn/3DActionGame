@@ -12,7 +12,7 @@ public class MoveToTarget : MonoBehaviour
     
     private float _minDistance = 2.5f;
 
-    private float _dashMovement = .5f;
+    private float _dashMovement = 1f;
     private float _minDisForDash = 10;
     private float _maxDisForDash = 15;
     
@@ -61,7 +61,7 @@ public class MoveToTarget : MonoBehaviour
 
     void DashToPlayer()
     {
-        transform.position += transform.forward * _dashMovement;// moves over frames
+        transform.position += transform.forward * Time.deltaTime * _dashMovement;// moves over frames
         //transform.position += transform.forward * _maxSpeed * Time.deltaTime;
     }
 }
