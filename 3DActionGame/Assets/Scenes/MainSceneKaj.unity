@@ -1420,7 +1420,7 @@ MonoBehaviour:
   _enemy: {fileID: 158404, guid: 525c4bcc5a465ab4ea205ddfbc07e214, type: 2}
   _player: {fileID: 105572, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
   _spawnDelay: 2
-  _minSpawnDistance: 1
+  _minSpawnDistance: 15
 --- !u!4 &765820206
 Transform:
   m_ObjectHideFlags: 0

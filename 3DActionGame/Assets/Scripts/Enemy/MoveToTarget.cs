@@ -39,10 +39,8 @@ public class MoveToTarget : MonoBehaviour
 
 		playerDistance = Vector3.Distance(transform.position, _target.transform.position);
 
-		//when distance is bigger than
 		if (playerDistance >= _minDistance)
         {
-			//move to target
 			transform.position += transform.forward * _moveSpeed * Time.deltaTime;//moves over time
 		}
 
@@ -52,7 +50,6 @@ public class MoveToTarget : MonoBehaviour
 		}
     }
 
-    //speed increase over time
     IEnumerator GradualSpeedIncrease()
     {
         while (true)
