@@ -18,7 +18,9 @@ public class MoveToTarget : MonoBehaviour
 	[SerializeField]private float playerDistance;
 
 	[SerializeField]private float attackDelay;
+	[SerializeField]private float attackCooldown;
 	private float timeStamp;
+	private float attackDelayTimeStamp;
 
 	void Start()
     {
@@ -44,13 +46,13 @@ public class MoveToTarget : MonoBehaviour
 			//when distance is bigger than
 			if (playerDistance >= _minDistance) {
 				//move to target
+				attackDelayTimeStamp = Time.time + attackDelay;
 				transform.position += transform.forward * _moveSpeed * Time.deltaTime;//moves over time
 			} else {
 				//attack here
 				//Debug.Log("attack");
-				if (Time.time >= timeStamp) {
-					timeStamp = Time.time + attackDelay;
-					Debug.Log ("attack");
+				if (Time.time >= timeStamp && Time.time >= attackDelayTimeStamp) {
+					timeStamp = Time.time + attackCooldown;
 					_target.GetComponent<HealthController> ().TakeDamage ();
 				}
 			}

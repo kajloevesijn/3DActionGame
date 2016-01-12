@@ -4834,7 +4834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathParticles: {fileID: 19881156, guid: 921543401a5bfb846af2da35edba7d4c, type: 2}
-  healthPoints: 5
+  healthPoints: 10
 --- !u!114 &838223676
 MonoBehaviour:
   m_ObjectHideFlags: 0

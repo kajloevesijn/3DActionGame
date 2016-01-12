@@ -5408,7 +5408,8 @@ MonoBehaviour:
   _minDisForDash: 10
   _maxDisForDash: 15
   playerDistance: 2
-  attackDelay: 1
+  attackDelay: .200000003
+  attackCooldown: 1
 --- !u!114 &11483386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6513,6 +6514,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: attackDelay
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attackCooldown
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
