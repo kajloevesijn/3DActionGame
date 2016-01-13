@@ -9,8 +9,11 @@ public class MoveToTarget : MonoBehaviour
     private float _speedIncrease = 0.1f;
     private float _maxSpeed = 15;
     private float _speedIncreaseDelay = 0.5f;
+<<<<<<< HEAD
     
     private float _minDistance = 1.99f;
+=======
+>>>>>>> 81482a4cbfebb95cf66db9d1464229fe7fd76859
 
     [SerializeField]private float _dashMovement = 1f;
     [SerializeField]private float _minDisForDash = 10;
@@ -48,7 +51,6 @@ public class MoveToTarget : MonoBehaviour
 		}
     }
 
-    //speed increase over time
     IEnumerator GradualSpeedIncrease()
     {
         while (true)
