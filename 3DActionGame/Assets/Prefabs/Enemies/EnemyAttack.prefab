@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 455774}
   - 198: {fileID: 19834132}
   - 199: {fileID: 19927154}
-  - 114: {fileID: 11463614}
   m_Layer: 0
   m_Name: EnemyAttack (1)
   m_TagString: Untagged
@@ -73,18 +72,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeSpan: 1.00999999
---- !u!114 &11463614
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ce79e9dd94e87e40b4c3c00b5a7ece9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeSpan: 2
 --- !u!198 &19834132
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -95,7 +82,7 @@ ParticleSystem:
   startDelay: 0
   speed: 1
   randomSeed: 0
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   moveWithTransform: 1

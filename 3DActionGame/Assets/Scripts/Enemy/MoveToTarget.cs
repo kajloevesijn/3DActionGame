@@ -5,7 +5,7 @@ public class MoveToTarget : MonoBehaviour
 {
     private GameObject _target;
 
-    private float _moveSpeed = 5;
+    private float _moveSpeed = 6;
     private float _speedIncrease = 0.01f;
     private float _maxSpeed = 15;
     private float _speedIncreaseDelay = 0.1f; 
@@ -25,7 +25,7 @@ public class MoveToTarget : MonoBehaviour
     {
 		playerDistance = GetComponent<PlayerDistance> ();
 		_target = GetComponent<FindPlayer> ().playerObject;
-		dashTimeStamp = Time.time + dashCooldown;
+		dashTimeStamp = Time.time + 2f;
         StartCoroutine(GradualSpeedIncrease());
     }
 
@@ -59,7 +59,7 @@ public class MoveToTarget : MonoBehaviour
 
 	IEnumerator DashTimer(){
 		yield return new WaitForSeconds (dashLength); // stop dashing after this
-		dashTimeStamp = Time.time + dashCooldown; // set new time stamp for setting dashing on true again
+		dashTimeStamp = Time.time + Random.Range(3f,dashCooldown); // set new time stamp for setting dashing on true again
 		dashing = false;
 		DashRoutine = false; //coroutine is over, if enemy is dashing again set new cooldown.
 	}
