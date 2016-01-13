@@ -1245,6 +1245,7 @@ GameObject:
   - 114: {fileID: 11487162}
   - 114: {fileID: 11452410}
   - 65: {fileID: 6535552}
+  - 114: {fileID: 11492962}
   m_Layer: 0
   m_Name: Enemy_2
   m_TagString: Enemy
@@ -1865,6 +1866,21 @@ GameObject:
   - 4: {fileID: 495792}
   m_Layer: 0
   m_Name: gun3_gun3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &166678
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 496904}
+  m_Layer: 0
+  m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4115,6 +4131,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 498518}
+  - {fileID: 496904}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &455616
@@ -5084,6 +5101,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 458408}
   m_RootOrder: 0
+--- !u!4 &496904
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166678}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: .963}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 455594}
+  m_RootOrder: 1
 --- !u!4 &498050
 Transform:
   m_ObjectHideFlags: 1
@@ -5444,7 +5473,6 @@ MonoBehaviour:
   _dashMovement: 1
   _minDisForDash: 10
   _maxDisForDash: 15
-  playerDistance: 2
 --- !u!114 &11452410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5480,6 +5508,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba177ad1e95d6ee45ba0281600647f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11492962
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90aa2c6fadc698b42ac30aef3a1ce3ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muzzle: {fileID: 166678}
+  attackParticles: {fileID: 19896422, guid: ba470ef99156d794a9af359a7db3eed0, type: 2}
+  _attackDelay: .25
+  _attackCooldown: 2
+  _attackRange: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -5496,6 +5540,23 @@ Prefab:
       propertyPath: m_Constraints
       value: 36
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _attackDelay
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _attackCooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _attackRange
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attackParticles
+      value: 
+      objectReference: {fileID: 19896422, guid: ba470ef99156d794a9af359a7db3eed0,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145188}

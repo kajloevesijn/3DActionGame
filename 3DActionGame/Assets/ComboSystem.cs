@@ -6,29 +6,10 @@ public class ComboSystem : MonoBehaviour {
 	[SerializeField]private int currentCombo;
 	[SerializeField]private float comboFallOffTime = 1;
 	private float baseComboFallOff;
-	private int highestCombo;
 	private float TimeStamp;
 
-	/*private int ArrayIndex = 0;
-	//0 = pistol
-	//1 = automatic pistol
-	//2 = triple pistol
-	//3 = assault rifle
-	//4 = shotgun
-	//5 = triple assault rifle
 
-
-	//Weapon Modifiers
-	[SerializeField]private List<float> baseWeaponAmmo;
-	[SerializeField]private List<float> attackCooldownPeriod;
-	[SerializeField]private List<float> bulletSpreadAmount;
-	[SerializeField]private List<float> BulletSpacing;
-
-	[SerializeField]private List<int> projectileAmount;
-
-	[SerializeField]private List<bool> multipleProjectiles;
-	[SerializeField]private List<bool> isShotgun;
-	[SerializeField]protected List<bool> isAutomatic;*/
+	public int highestCombo;
 
 	void Start () {
 		baseComboFallOff = comboFallOffTime;

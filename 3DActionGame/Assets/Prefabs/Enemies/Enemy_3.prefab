@@ -238,6 +238,7 @@ GameObject:
   - 114: {fileID: 11484730}
   - 114: {fileID: 11414696}
   - 114: {fileID: 11456532}
+  - 114: {fileID: 11471274}
   m_Layer: 0
   m_Name: Enemy_3
   m_TagString: Enemy
@@ -662,6 +663,21 @@ GameObject:
   - 4: {fileID: 467508}
   m_Layer: 0
   m_Name: transform8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &119428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 478128}
+  m_Layer: 0
+  m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4620,6 +4636,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 477710}
+  - {fileID: 478128}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &476100
@@ -4679,7 +4696,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 191464}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
@@ -4713,6 +4730,18 @@ Transform:
   - {fileID: 444754}
   m_Father: {fileID: 475700}
   m_RootOrder: 0
+--- !u!4 &478128
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119428}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.15999997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 475700}
+  m_RootOrder: 1
 --- !u!4 &478528
 Transform:
   m_ObjectHideFlags: 1
@@ -5434,6 +5463,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba177ad1e95d6ee45ba0281600647f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11471274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90aa2c6fadc698b42ac30aef3a1ce3ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muzzle: {fileID: 119428}
+  attackParticles: {fileID: 19896422, guid: ba470ef99156d794a9af359a7db3eed0, type: 2}
+  _attackDelay: .25
+  _attackCooldown: 2
+  _attackRange: 2
 --- !u!114 &11484730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5445,7 +5490,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d5236e51ebc5d43b782c95669706a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDistance: 2
+  _dashMovement: 1
+  _minDisForDash: 10
+  _maxDisForDash: 15
 --- !u!135 &13515854
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -5464,7 +5511,24 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: _attackDelay
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _attackCooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _attackRange
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attackParticles
+      value: 
+      objectReference: {fileID: 19896422, guid: ba470ef99156d794a9af359a7db3eed0,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 104420}

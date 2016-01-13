@@ -10,20 +10,16 @@ public class MoveToTarget : MonoBehaviour
     private float _maxSpeed = 15;
     private float _speedIncreaseDelay = 0.5f;
     
-    private float _minDistance = 2f;
+    private float _minDistance = 1.99f;
 
     [SerializeField]private float _dashMovement = 1f;
     [SerializeField]private float _minDisForDash = 10;
     [SerializeField]private float _maxDisForDash = 15;
-	[SerializeField]private float playerDistance;
 
-	[SerializeField]private float attackDelay;
-	[SerializeField]private float attackCooldown;
-	private float timeStamp;
-	private float attackDelayTimeStamp;
-
+	private PlayerDistance playerDistance;
 	void Start()
     {
+		playerDistance = GetComponent<PlayerDistance> ();
 		_target = GetComponent<FindPlayer> ().playerObject;
 
         if (_moveSpeed < _maxSpeed)
@@ -40,24 +36,13 @@ public class MoveToTarget : MonoBehaviour
     {
 		if (_target != null) {
 			transform.LookAt (_target.transform.position);
-
-			playerDistance = Vector3.Distance (transform.position, _target.transform.position);
-
 			//when distance is bigger than
-			if (playerDistance >= _minDistance) {
+			if (playerDistance.playerDistance >= _minDistance) {
 				//move to target
-				attackDelayTimeStamp = Time.time + attackDelay;
 				transform.position += transform.forward * _moveSpeed * Time.deltaTime;//moves over time
-			} else {
-				//attack here
-				//Debug.Log("attack");
-				if (Time.time >= timeStamp && Time.time >= attackDelayTimeStamp) {
-					timeStamp = Time.time + attackCooldown;
-					_target.GetComponent<HealthController> ().TakeDamage ();
-				}
 			}
 
-			if (playerDistance <= _maxDisForDash && playerDistance > _minDisForDash) {
+			if (playerDistance.playerDistance <= _maxDisForDash && playerDistance.playerDistance > _minDisForDash) {
 				DashToPlayer ();
 			}
 		}

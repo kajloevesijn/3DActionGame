@@ -68,7 +68,7 @@ public class RangedProjectileWeapon : WeaponBase
             {
                 if (canAttack)
                 {
-                    if (isAutomatic)
+					if (isAutomatic)
                     {
                         Fire();
                     }
@@ -87,9 +87,9 @@ public class RangedProjectileWeapon : WeaponBase
 
     public void ManualReload()
     {
-        if (weaponAmmo != baseWeaponAmmo)                                                       // you can't reload if ammo is full
+		if (weaponAmmo != baseWeaponAmmo)                                                       // you can't reload if ammo is full
         {
-            weaponAmmo = 0;
+			weaponAmmo = 0;
         }
         ReloadSequence();
     }
@@ -107,9 +107,9 @@ public class RangedProjectileWeapon : WeaponBase
     {
         if (multipleProjectiles)
         {
-            for (int i = 0; i < projectileAmount; i++)
+			for (int i = 0; i < projectileAmount; i++)
             {
-                currentAngleOffset += BulletSpacing; //increases angle for next bullet
+				currentAngleOffset += BulletSpacing; //increases angle for next bullet
                 createBullet();
             }
         }

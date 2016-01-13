@@ -1793,6 +1793,7 @@ GameObject:
   - 54: {fileID: 5425884}
   - 114: {fileID: 11457694}
   - 114: {fileID: 11430640}
+  - 114: {fileID: 11467858}
   m_Layer: 0
   m_Name: Enemy_1
   m_TagString: Enemy
@@ -1825,6 +1826,21 @@ GameObject:
   - 4: {fileID: 478240}
   m_Layer: 0
   m_Name: transform29
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &171206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 436818}
+  m_Layer: 0
+  m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3658,6 +3674,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 431050}
   m_RootOrder: 0
+--- !u!4 &436818
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0179999992, y: -.540000021, z: .646000028}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 449820}
+  m_RootOrder: 3
 --- !u!4 &437388
 Transform:
   m_ObjectHideFlags: 1
@@ -4012,6 +4040,7 @@ Transform:
   - {fileID: 440974}
   - {fileID: 402392}
   - {fileID: 454626}
+  - {fileID: 436818}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &450284
@@ -5393,6 +5422,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emitter: {fileID: 19807614}
+--- !u!114 &11467858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90aa2c6fadc698b42ac30aef3a1ce3ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muzzle: {fileID: 171206}
+  attackParticles: {fileID: 19896422, guid: ba470ef99156d794a9af359a7db3eed0, type: 2}
+  _attackDelay: .25
+  _attackCooldown: 2
+  _attackRange: 2
 --- !u!114 &11468666
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5407,9 +5452,6 @@ MonoBehaviour:
   _dashMovement: 5
   _minDisForDash: 10
   _maxDisForDash: 15
-  playerDistance: 2
-  attackDelay: .200000003
-  attackCooldown: 1
 --- !u!114 &11483386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6520,6 +6562,23 @@ Prefab:
       propertyPath: attackCooldown
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _attackDelay
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _attackCooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _attackRange
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attackParticles
+      value: 
+      objectReference: {fileID: 19896422, guid: ba470ef99156d794a9af359a7db3eed0,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 169038}
