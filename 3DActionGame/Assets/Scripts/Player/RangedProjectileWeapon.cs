@@ -52,7 +52,7 @@ public class RangedProjectileWeapon : WeaponBase
 
     private void ReloadSequence()                                                              // reloads the weapon;
     {
-            if (weaponAmmo <= 1) {                                                // checks if player has any ammo left
+			if (weaponAmmo <= 1 && isReloading == false) {                                                // checks if player has any ammo left
 				isReloading = true;                                                            // sets bool
 				reloadTimeStamp = Time.time + reloadTime;
 				weaponAmmo = baseWeaponAmmo;

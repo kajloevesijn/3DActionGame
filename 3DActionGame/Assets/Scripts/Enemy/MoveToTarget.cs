@@ -6,33 +6,27 @@ public class MoveToTarget : MonoBehaviour
     private GameObject _target;
 
     private float _moveSpeed = 5;
-    private float _speedIncrease = 0.1f;
+    private float _speedIncrease = 0.01f;
     private float _maxSpeed = 15;
-    private float _speedIncreaseDelay = 0.5f;
-<<<<<<< HEAD
-    
-    private float _minDistance = 1.99f;
-=======
->>>>>>> 81482a4cbfebb95cf66db9d1464229fe7fd76859
-
-    [SerializeField]private float _dashMovement = 1f;
+    private float _speedIncreaseDelay = 0.1f; 
+    private float _minDistance = 2.49f;
+    [SerializeField]private float _dashSpeed = 1f;
     [SerializeField]private float _minDisForDash = 10;
     [SerializeField]private float _maxDisForDash = 15;
+
+	[SerializeField]private float dashCooldown;
+	[SerializeField]private float dashLength;
+	private bool DashRoutine = false;
+	private bool dashing = false;
+	private float dashTimeStamp;
 
 	private PlayerDistance playerDistance;
 	void Start()
     {
 		playerDistance = GetComponent<PlayerDistance> ();
 		_target = GetComponent<FindPlayer> ().playerObject;
-
-        if (_moveSpeed < _maxSpeed)
-        {
-            StartCoroutine(GradualSpeedIncrease());
-        }
-        else
-        {
-            _moveSpeed = _maxSpeed;
-        }
+		dashTimeStamp = Time.time + dashCooldown;
+        StartCoroutine(GradualSpeedIncrease());
     }
 
     void Update()
@@ -43,13 +37,32 @@ public class MoveToTarget : MonoBehaviour
 			if (playerDistance.playerDistance >= _minDistance) {
 				//move to target
 				transform.position += transform.forward * _moveSpeed * Time.deltaTime;//moves over time
-			}
-
-			if (playerDistance.playerDistance <= _maxDisForDash && playerDistance.playerDistance > _minDisForDash) {
-				DashToPlayer ();
+				Dash();
 			}
 		}
     }
+
+	private void Dash(){
+		if (Time.time >= dashTimeStamp && dashing == false) {
+			dashing = true;
+		}
+		if (dashing) {
+			if(DashRoutine == false){
+				DashRoutine = true;
+				StartCoroutine(DashTimer());
+			} 
+			if(DashRoutine == true){
+			transform.position += transform.forward * Time.deltaTime * _dashSpeed;
+			}
+		}
+	}
+
+	IEnumerator DashTimer(){
+		yield return new WaitForSeconds (dashLength); // stop dashing after this
+		dashTimeStamp = Time.time + dashCooldown; // set new time stamp for setting dashing on true again
+		dashing = false;
+		DashRoutine = false; //coroutine is over, if enemy is dashing again set new cooldown.
+	}
 
     IEnumerator GradualSpeedIncrease()
     {
@@ -58,11 +71,5 @@ public class MoveToTarget : MonoBehaviour
             _moveSpeed += _speedIncrease;
             yield return new WaitForSeconds(_speedIncreaseDelay);
         }
-    }
-
-    void DashToPlayer()
-    {
-        transform.position += transform.forward * Time.deltaTime * _dashMovement;// moves over frames
-        //transform.position += transform.forward * _maxSpeed * Time.deltaTime;
     }
 }

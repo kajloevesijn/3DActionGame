@@ -36,16 +36,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 123108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cc22f2406122ca4a8e60e02d71ebecc, type: 3}
+  m_Script: {fileID: 11500000, guid: 4baf3d273650356498055f170685053d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _enemies:
-  - {fileID: 169038, guid: 77b9e9456d453474592d26a36751096d, type: 2}
-  - {fileID: 145188, guid: df8b3cc070f5e9d4c9ee1532da04670f, type: 2}
-  - {fileID: 104420, guid: f4e923d70687c2146a91b3564b5fc272, type: 2}
+  - {fileID: 158404, guid: 525c4bcc5a465ab4ea205ddfbc07e214, type: 2}
+  - {fileID: 130116, guid: c1bb9962e9ba74a45a52ae85267ae00c, type: 2}
+  - {fileID: 117220, guid: 970320e54c903c340829a40154f82927, type: 2}
   _player: {fileID: 0}
   _spawnDelay: 2
-  _minSpawnDistance: 3
+  _minSpawnDistance: 4
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

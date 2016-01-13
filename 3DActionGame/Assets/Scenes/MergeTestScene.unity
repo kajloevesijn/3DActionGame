@@ -4834,7 +4834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathParticles: {fileID: 19881156, guid: 921543401a5bfb846af2da35edba7d4c, type: 2}
-  healthPoints: 10
+  healthPoints: 10000
 --- !u!114 &838223676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4848,7 +4848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCombo: 0
-  comboFallOffTime: 1
+  comboFallOffTime: 2
 --- !u!65 &838223677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4861,7 +4861,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: .550000012, z: 0}
 --- !u!114 &838223678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6884,6 +6884,56 @@ Transform:
   - {fileID: 1301352665}
   m_Father: {fileID: 757532409}
   m_RootOrder: 3
+--- !u!1001 &1108970918
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -54.5456963
+      objectReference: {fileID: 0}
+    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.19646502
+      objectReference: {fileID: 0}
+    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -32.6256981
+      objectReference: {fileID: 0}
+    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437518, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 838223673}
+    - target: {fileID: 11437518, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
+      propertyPath: _spawnDelay
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1110146315
 GameObject:
   m_ObjectHideFlags: 0
@@ -8511,64 +8561,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1931452371}
   m_RootOrder: 3
---- !u!1001 &1807819305
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -54.5456963
-      objectReference: {fileID: 0}
-    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -4.19646502
-      objectReference: {fileID: 0}
-    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -32.6256981
-      objectReference: {fileID: 0}
-    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 428298, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 11437518, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
-      propertyPath: _player
-      value: 
-      objectReference: {fileID: 838223673}
-    - target: {fileID: 11437518, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
-      propertyPath: _enemies.Array.data[0]
-      value: 
-      objectReference: {fileID: 158404, guid: 525c4bcc5a465ab4ea205ddfbc07e214, type: 2}
-    - target: {fileID: 11437518, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
-      propertyPath: _enemies.Array.data[1]
-      value: 
-      objectReference: {fileID: 130116, guid: c1bb9962e9ba74a45a52ae85267ae00c, type: 2}
-    - target: {fileID: 11437518, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
-      propertyPath: _enemies.Array.data[2]
-      value: 
-      objectReference: {fileID: 117220, guid: 970320e54c903c340829a40154f82927, type: 2}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6015ef1697e59ad48a806dd348afdeb0, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1814762951
 GameObject:
   m_ObjectHideFlags: 0
@@ -9077,9 +9069,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 665af36d3e3d61c4d9f226e1ab9caccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponAmmo: 2
-  baseWeaponAmmo: 2
-  attackCooldownPeriod: 1
+  weaponAmmo: 1
+  baseWeaponAmmo: 1
+  attackCooldownPeriod: 0
   reloadTime: 4
   attackTimeStamp: 0
   reloadTimeStamp: 0
@@ -9096,7 +9088,7 @@ MonoBehaviour:
   weaponShakeStrength: .5
   bulletSpreadAmount: 15
   multipleProjectiles: 1
-  projectileAmount: 5
+  projectileAmount: 10
   BulletSpacing: 0
   isShotgun: 1
 --- !u!1 &1931452370
