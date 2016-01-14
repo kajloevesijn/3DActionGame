@@ -1290,15 +1290,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 455594}
-<<<<<<< HEAD
-  - 65: {fileID: 6552526}
-  - 65: {fileID: 6535552}
-  - 114: {fileID: 11496670}
-=======
   - 54: {fileID: 5434570}
   - 65: {fileID: 6552526}
   - 114: {fileID: 11406062}
->>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
   - 114: {fileID: 11417368}
   - 114: {fileID: 11487162}
   - 114: {fileID: 11452410}
@@ -5520,8 +5514,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 188804}
   m_Mesh: {fileID: 4300004, guid: 2023c36b1edc7de48bd9e3da3f49080b, type: 3}
-<<<<<<< HEAD
-=======
 --- !u!54 &5434570
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -5537,7 +5529,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 36
   m_CollisionDetection: 0
->>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
 --- !u!65 &6535552
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -5734,14 +5725,8 @@ MonoBehaviour:
   _dashSpeed: 10
   _minDisForDash: 10
   _maxDisForDash: 15
-<<<<<<< HEAD
-  playerDistance: 2
-  attackDelay: 0
-  attackCooldown: 0
-=======
   dashCooldown: 7
   dashLength: .25
->>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
 --- !u!114 &11452410
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5789,11 +5774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba177ad1e95d6ee45ba0281600647f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
---- !u!114 &11496670
-=======
 --- !u!114 &11492962
->>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -5801,12 +5782,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 145188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: b3cd77f1641abf540a827cefc1767f3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerObject: {fileID: 105572, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
-=======
   m_Script: {fileID: 11500000, guid: 90aa2c6fadc698b42ac30aef3a1ce3ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -7917,7 +7892,6 @@ ParticleSystemRenderer:
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
->>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

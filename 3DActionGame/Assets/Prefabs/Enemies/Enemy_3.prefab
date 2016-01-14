@@ -252,12 +252,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 475700}
   - 135: {fileID: 13515854}
-<<<<<<< HEAD
-  - 114: {fileID: 11492462}
-=======
   - 54: {fileID: 5441918}
   - 114: {fileID: 11474752}
->>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
   - 114: {fileID: 11484730}
   - 114: {fileID: 11414696}
   - 114: {fileID: 11456532}
@@ -5559,8 +5555,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152848}
   m_Mesh: {fileID: 4300008, guid: 97ab44c0f0802964cb05f7ee07de8734, type: 3}
-<<<<<<< HEAD
-=======
 --- !u!54 &5441918
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -5576,7 +5570,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 36
   m_CollisionDetection: 0
->>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
 --- !u!95 &9543222
 Animator:
   serializedVersion: 3
@@ -5855,22 +5848,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d5236e51ebc5d43b782c95669706a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  _dashMovement: 1
-  _minDisForDash: 10
-  _maxDisForDash: 15
-  playerDistance: 2
-  attackDelay: 0
-  attackCooldown: 0
---- !u!114 &11492462
-=======
   _dashSpeed: 5
   _minDisForDash: 10
   _maxDisForDash: 15
   dashCooldown: 7
   dashLength: 1
 --- !u!114 &11496542
->>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -5878,17 +5861,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 104420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 11500000, guid: b3cd77f1641abf540a827cefc1767f3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerObject: {fileID: 105572, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
-=======
   m_Script: {fileID: 11500000, guid: d027360fbdfe9374989e853d606890da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerDistance: 0
->>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
 --- !u!135 &13515854
 SphereCollider:
   m_ObjectHideFlags: 1

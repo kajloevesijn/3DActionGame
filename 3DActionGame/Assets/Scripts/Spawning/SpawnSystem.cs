@@ -14,8 +14,8 @@ public class SpawnSystem : MonoBehaviour {
 	private float _spawnArea = 31;
 	void Start()
     {
-        _timeFor2Enemies = Time.time + 20;//adds enemy2 after 20 seconds
-        _timeFor3Enemies = Time.time + 40;//adds enemy3 after 40 seconds
+        _timeFor2Enemies = Time.time + 30;//adds enemy2 after 20 seconds
+        _timeFor3Enemies = Time.time + 60;//adds enemy3 after 40 seconds
 
 		StartCoroutine(SpawnEnemy());
 	}
@@ -23,7 +23,7 @@ public class SpawnSystem : MonoBehaviour {
 	//Private Functions
 	private IEnumerator SpawnEnemy()
     {
-        while (true)
+        while (_player)
         {
 			Vector3 playerPos = _player.transform.position;
 			Vector3 spawnPos = RandomWorldPoint();

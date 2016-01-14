@@ -8,17 +8,12 @@ public class MoveToTarget : MonoBehaviour
     private float _moveSpeed = 6;
     private float _speedIncrease = 0.01f;
     private float _maxSpeed = 15;
-<<<<<<< HEAD
-    private float _speedIncreaseDelay = 0.5f;
-
-    private float _minDistance = 2.5f;
-
     [SerializeField]private float _dashMovement = 1f;
-=======
+
     private float _speedIncreaseDelay = 0.1f; 
     private float _minDistance = 2.49f;
     [SerializeField]private float _dashSpeed = 1f;
->>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
+
     [SerializeField]private float _minDisForDash = 10;
     [SerializeField]private float _maxDisForDash = 15;
 

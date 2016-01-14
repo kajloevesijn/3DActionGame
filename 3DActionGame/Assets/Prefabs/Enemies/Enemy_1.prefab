@@ -1792,11 +1792,8 @@ GameObject:
   - 114: {fileID: 11407498}
   - 114: {fileID: 11457694}
   - 114: {fileID: 11430640}
-<<<<<<< HEAD
-=======
   - 114: {fileID: 11467858}
   - 54: {fileID: 5425884}
->>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
   - 65: {fileID: 6577900}
   m_Layer: 0
   m_Name: Enemy_1
@@ -5275,8 +5272,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164346}
   m_Mesh: {fileID: 4300002, guid: b9e7cf9dde185ec4c8a71e6f9ed585ea, type: 3}
-<<<<<<< HEAD
-=======
 --- !u!54 &5425884
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -5292,7 +5287,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 36
   m_CollisionDetection: 0
->>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
 --- !u!65 &6577900
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6584,15 +6578,6 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
-<<<<<<< HEAD
-      propertyPath: m_LocalPosition.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: playerObject
-      value: 
-      objectReference: {fileID: 105572, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
-=======
       propertyPath: _attackDelay
       value: .25
       objectReference: {fileID: 0}
@@ -6637,7 +6622,6 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
->>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 169038}
