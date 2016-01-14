@@ -156,6 +156,7 @@ public class RangedProjectileWeapon : WeaponBase
 	private void MuzzleEffects(){
 		if(muzzleFlash != null){
 			//Instantiate(muzzleFlash,muzzlePosition.transform.position,muzzlePosition.transform.rotation);
+			GetComponent<AudioSourceController>().ChangeAudioSourceRandom();
             Instantiate(muzzleSmoke, muzzlePosition.transform.position, muzzlePosition.transform.rotation);
 		}else{
 			Debug.Log("no muzzle reference");
