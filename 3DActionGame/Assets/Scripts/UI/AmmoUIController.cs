@@ -8,35 +8,25 @@ public class AmmoUIController : MonoBehaviour
     private Text _ammoText;
 
     [SerializeField]
-    private RangedProjectileWeapon _leftWeaponAmmo;
-    [SerializeField]
-    private RangedProjectileWeapon _rightWeaponAmmo;
+    private RangedProjectileWeapon _weapon;
 
-    private float _totalAmmoLeft;
-    private float _totalAmmoRight;
+	private int _totalAmmo;
 
-    private float _currentAmmoLeft;
-    private float _currentAmmoRight;
+	private int _currentAmmo;
 
 
     // Use this for initialization
     void Start()
     {
 
-        _totalAmmoRight = _rightWeaponAmmo.TotalAmmo;
-        _currentAmmoRight = _rightWeaponAmmo.CurrentAmmo;
-
-
-        DisplayAmmo();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //_currentAmmoLeft = _leftWeaponAmmo.GetCurrentAmmoValue();
-        //s_currentAmmoRight = _rightWeaponAmmo.GetCurrentAmmoValue();
-        //_currentAmmoRight;
-        //_currentAmmoRight = _rightWeaponAmmo.CurrentAmmo;
+		_totalAmmo = _weapon.TotalAmmo();
+
+        _currentAmmo = _weapon.CurrentAmmo();
 
         DisplayAmmo();
     }
@@ -45,8 +35,10 @@ public class AmmoUIController : MonoBehaviour
     //Get both values tho, total needs to be the same because thats max ammo and CurrentAmmo needs to get the set value xd which works correctly in RangedProjectileWeapon
     void DisplayAmmo()
     {
-        _currentAmmoRight = _rightWeaponAmmo.CurrentAmmo;
-        Debug.Log(_currentAmmoRight);
-        _ammoText.text = "Gun Ammo: " + _totalAmmoRight.ToString() + " / " + _rightWeaponAmmo.CurrentAmmo.ToString();
+		if (_weapon.CurrentReloadState() == false) {
+			_ammoText.text = "Gun Ammo: " + _totalAmmo.ToString () + " / " + _currentAmmo.ToString ();
+		} else {
+			_ammoText.text = "Reloading";
+		}
     }
 }

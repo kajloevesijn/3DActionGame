@@ -119,9 +119,7 @@ public class RangedProjectileWeapon : WeaponBase
         }
 		MuzzleEffects();
 		camera.GetComponent<CameraObjectFollower> ().shakeLength = weaponShakeStrength;
-        weaponAmmo--; // enable it later
-
-        Debug.Log(CurrentAmmo);
+        weaponAmmo--;
         //^this goes down just as weaponAmmo
 
         if (weaponAmmo <= 0)                                                        // reloads weapon for you if you hit 0 after firing
@@ -168,15 +166,16 @@ public class RangedProjectileWeapon : WeaponBase
 	}
 
     //FOR UI NOT WORKING CORRECTLY
-    public int TotalAmmo
+    public int TotalAmmo()
     {
-        get { return baseWeaponAmmo; }
+        return baseWeaponAmmo;
     }
 
-    public int CurrentAmmo
+    public int CurrentAmmo()
     {
-        get { return weaponAmmo; }
-
-        set { weaponAmmo = value; }
+        return weaponAmmo;
     }
+	public bool CurrentReloadState(){
+		return isReloading;
+	}
 }
