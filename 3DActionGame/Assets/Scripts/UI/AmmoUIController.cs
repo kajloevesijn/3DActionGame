@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class AmmoUIController : MonoBehaviour {
+public class AmmoUIController : MonoBehaviour
+{
 
     [SerializeField]
     private Text _ammoText;
@@ -18,28 +19,34 @@ public class AmmoUIController : MonoBehaviour {
     private float _currentAmmoRight;
 
 
-	// Use this for initialization
-	void Start () {
-        _leftWeaponAmmo = GetComponent<RangedProjectileWeapon>();
-        _rightWeaponAmmo = GetComponent <RangedProjectileWeapon>();
-
-        _totalAmmoLeft = _leftWeaponAmmo.GetAmmoValue();
-        _totalAmmoRight = _rightWeaponAmmo.GetAmmoValue();
-        
-        DisplayAmmo();
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    // Use this for initialization
+    void Start()
     {
-        _currentAmmoLeft = _leftWeaponAmmo.GetCurrentAmmoValue();
-        _currentAmmoRight = _rightWeaponAmmo.GetCurrentAmmoValue();
-	}
 
+        _totalAmmoRight = _rightWeaponAmmo.TotalAmmo;
+        _currentAmmoRight = _rightWeaponAmmo.CurrentAmmo;
+
+
+        DisplayAmmo();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //_currentAmmoLeft = _leftWeaponAmmo.GetCurrentAmmoValue();
+        //s_currentAmmoRight = _rightWeaponAmmo.GetCurrentAmmoValue();
+        //_currentAmmoRight;
+        //_currentAmmoRight = _rightWeaponAmmo.CurrentAmmo;
+
+        DisplayAmmo();
+    }
+
+    //CURRENTAMMO IS NOT UPDATING ANGFSKGSKDJGSDLJKGFLSDKFJSDF RAGE
+    //Get both values tho, total needs to be the same because thats max ammo and CurrentAmmo needs to get the set value xd which works correctly in RangedProjectileWeapon
     void DisplayAmmo()
     {
-        //ammoText.text = "Ammo: " + _totalAmmo.ToString() + " / " + _currentAmmo.ToString();
-
-        _ammoText.text = "Gun Ammo: " + _totalAmmoRight.ToString() + " / " + _currentAmmoRight.ToString();
+        _currentAmmoRight = _rightWeaponAmmo.CurrentAmmo;
+        Debug.Log(_currentAmmoRight);
+        _ammoText.text = "Gun Ammo: " + _totalAmmoRight.ToString() + " / " + _rightWeaponAmmo.CurrentAmmo.ToString();
     }
 }

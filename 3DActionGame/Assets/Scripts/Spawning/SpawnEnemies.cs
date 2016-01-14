@@ -3,63 +3,98 @@ using System.Collections;
 
 public class SpawnEnemies : MonoBehaviour
 {
-    [SerializeField]private GameObject enemyUnit;
-    [SerializeField]private GameObject _playerPos;
+    [SerializeField]
+    private GameObject[] _enemies = new GameObject[3];
+    [SerializeField]
+    private GameObject _player;
+    [SerializeField]
+    private float _spawnDelay;
+    [SerializeField]
+    private float _minSpawnDistance;
 
-    //private float _minimalRadius;
-    //private float _maximalRadius;
-    [SerializeField]private float _spawnRadius;
+    private float _timeFor2Enemies;
+    private float _timeFor3Enemies;
 
-    [SerializeField]private float _spawnDelay;
-
-
-    // Use this for initialization
-    void Start ()
+    private float _spawnArea = 31;
+    void Start()
     {
+        _timeFor2Enemies = Time.time + 30;//adds enemy2 after 20 seconds
+        _timeFor3Enemies = Time.time + 60;//adds enemy3 after 40 seconds
+
         StartCoroutine(SpawnEnemy());
-	}
-	
-    IEnumerator SpawnEnemy()
+    }
+
+    //Private Functions
+    private IEnumerator SpawnEnemy()
     {
-        //let it loop
-        while (true)
+        while (_player)
         {
-            //COULD
-            //make random radius calculation
-            //_spawnRadius = RandomSpawnRadius();
+            Vector3 playerPos = _player.transform.position;
+            Vector3 spawnPos = RandomWorldPoint();
+            float distance = Vector3.Distance(playerPos, spawnPos);
+            float randomIndex = Random.value;
 
-            //getting the center of the playerposition
-            Vector3 center = _playerPos.transform.position;
+            if (_minSpawnDistance >= distance)
+            {
+                spawnPos = RandomWorldPoint();
+            }
 
-            Vector3 spawnPos = CreateRandonSpawnPoint(center, _spawnRadius);
-
-            //picks random spawnpoint and instantiate
-            GameObject enemyClone = (GameObject)Instantiate(enemyUnit, spawnPos, Quaternion.identity);
-
-            //COULD
-            //change spawndelay value for increased difficulty
+            //add enemies over time
+            if (Time.time > _timeFor2Enemies && Time.time < _timeFor3Enemies)
+            {
+                GameObject enemyClone = (GameObject)Instantiate(ChosenEnemyFromTwo(randomIndex), spawnPos, Quaternion.identity);
+                //spawn 1 of 2 enemies
+            }
+            else if (Time.time > _timeFor3Enemies)
+            {
+                //spawn 1 of 3 enemies
+                GameObject enemyClone = (GameObject)Instantiate(ChosenEnemyFromThree(randomIndex), spawnPos, Quaternion.identity);
+            }
+            else
+            {
+                //spawn only weakest enemy
+                GameObject enemyClone = (GameObject)Instantiate(_enemies[0], spawnPos, Quaternion.identity);
+            }
 
             //wait for new spawn
             yield return new WaitForSeconds(_spawnDelay);
         }
     }
 
-    Vector3 CreateRandonSpawnPoint(Vector3 centerPos, float radius)
+    private Vector3 RandomWorldPoint()
     {
-        float angle = Random.value * 360;
-
-        Vector3 randomPos;
-
-        //calculating randomPos
-        randomPos.x = centerPos.x + radius * Mathf.Sin(angle * Mathf.Deg2Rad);
-        randomPos.y = centerPos.y;
-        randomPos.z = centerPos.z + radius * Mathf.Cos(angle * Mathf.Deg2Rad);
-
-        return randomPos;
+        Vector3 randomWorldPoint;
+        randomWorldPoint.x = Random.Range(-_spawnArea, _spawnArea);
+        randomWorldPoint.y = 1f;
+        randomWorldPoint.z = Random.Range(-_spawnArea, _spawnArea);
+        return randomWorldPoint;
     }
 
-    /*float RandomSpawnRadius()
+    private GameObject ChosenEnemyFromTwo(float randomValue)
     {
-        float value = Random.value * _maximalRadius - _minimalRadius;
-    }*/
+        if (randomValue < .7)
+        {
+            return _enemies[0];
+        }
+        else
+        {
+            return _enemies[1];
+        }
+    }
+
+    private GameObject ChosenEnemyFromThree(float randomValue)
+    {
+        if (randomValue > .5)//50% chance 
+        {
+            return _enemies[0];
+        }
+        else if (randomValue > .2 && randomValue < .5)//30% chance
+        {
+            return _enemies[1];
+        }
+        else //20% chance
+        {
+            return _enemies[2];
+        }
+    }
 }
