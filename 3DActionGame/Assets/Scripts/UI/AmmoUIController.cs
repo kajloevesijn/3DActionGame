@@ -12,19 +12,20 @@ public class AmmoUIController : MonoBehaviour
     [SerializeField]
     private RangedProjectileWeapon _rightWeaponAmmo;
 
-    private float _totalAmmoLeft;
-    private float _totalAmmoRight;
+    private int _totalAmmoLeft;
+    private int _totalAmmoRight;
 
-    private float _currentAmmoLeft;
-    private float _currentAmmoRight;
+    private int _currentAmmoLeft;
+    private int _currentAmmoRight;
 
 
     // Use this for initialization
     void Start()
     {
 
-        _totalAmmoRight = _rightWeaponAmmo.TotalAmmo;
-        _currentAmmoRight = _rightWeaponAmmo.CurrentAmmo;
+        _totalAmmoRight = _rightWeaponAmmo.TotalAmmo;//works doesn't need to be changed
+
+        //_currentAmmoRight = _rightWeaponAmmo.CurrentAmmo;
 
 
         DisplayAmmo();
@@ -33,11 +34,6 @@ public class AmmoUIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //_currentAmmoLeft = _leftWeaponAmmo.GetCurrentAmmoValue();
-        //s_currentAmmoRight = _rightWeaponAmmo.GetCurrentAmmoValue();
-        //_currentAmmoRight;
-        //_currentAmmoRight = _rightWeaponAmmo.CurrentAmmo;
-
         DisplayAmmo();
     }
 
@@ -47,6 +43,6 @@ public class AmmoUIController : MonoBehaviour
     {
         _currentAmmoRight = _rightWeaponAmmo.CurrentAmmo;
         Debug.Log(_currentAmmoRight);
-        _ammoText.text = "Gun Ammo: " + _totalAmmoRight.ToString() + " / " + _rightWeaponAmmo.CurrentAmmo.ToString();
+        _ammoText.text = "Gun Ammo: " + _totalAmmoRight.ToString() + " / " + _currentAmmoRight.ToString();
     }
 }
