@@ -2114,10 +2114,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 527e53f59603d02499cffdba5dde8b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motionBlurFalloff: 2
-  motionBlurBuildup: 4
-  blurCooldown: .5
-  maxBlurAmount: .5
+  motionBlurFalloff: 0
+  motionBlurBuildup: 0
+  blurCooldown: 0
+  maxBlurAmount: 0
 --- !u!114 &392446164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2129,8 +2129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 478a2083ad114a07d000fbfb8d76c639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shader: {fileID: 4800000, guid: e9ba2083ad114a07d000fbfb8d76c639, type: 3}
-  blurAmount: 0
+  shader: {fileID: 0}
+  blurAmount: .800000012
   extraBlur: 0
 --- !u!114 &392446165
 MonoBehaviour:
@@ -2139,7 +2139,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 392446162}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fd999d1b2cf94a45a5b0a47ce074bef, type: 3}
   m_Name: 
@@ -2250,18 +2250,15 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-  saturation: 5
+  saturation: 1
   selectiveCc: 0
   selectiveFromColor: {r: 1, g: 1, b: 1, a: 1}
   selectiveToColor: {r: 1, g: 1, b: 1, a: 1}
   mode: 0
   updateTextures: 1
-  colorCorrectionCurvesShader: {fileID: 4800000, guid: 62bcade1028c24ca1a39760ed84b9487,
-    type: 3}
-  simpleColorCorrectionCurvesShader: {fileID: 4800000, guid: 438ddd58d82c84d9eb1fdc56111702e1,
-    type: 3}
-  colorCorrectionSelectiveShader: {fileID: 4800000, guid: e515e0f94cefc4c0db54b45cba621544,
-    type: 3}
+  colorCorrectionCurvesShader: {fileID: 0}
+  simpleColorCorrectionCurvesShader: {fileID: 0}
+  colorCorrectionSelectiveShader: {fileID: 0}
 --- !u!114 &392446166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2269,7 +2266,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 392446162}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fceaeb339b971b429c4cc600acabd13, type: 3}
   m_Name: 
@@ -2277,30 +2274,28 @@ MonoBehaviour:
   tweakMode: 0
   screenBlendMode: 1
   hdr: 0
-  sepBlurSpread: .100000001
+  sepBlurSpread: 2.5
   quality: 1
-  bloomIntensity: .75
-  bloomThreshold: .219999999
+  bloomIntensity: .5
+  bloomThreshold: .5
   bloomThresholdColor: {r: 1, g: 1, b: 1, a: 1}
-  bloomBlurIterations: 1
-  hollywoodFlareBlurIterations: 1
+  bloomBlurIterations: 2
+  hollywoodFlareBlurIterations: 2
   flareRotation: 0
   lensflareMode: 1
-  hollyStretchWidth: 1
+  hollyStretchWidth: 2.5
   lensflareIntensity: 0
-  lensflareThreshold: .280000001
+  lensflareThreshold: .300000012
   lensFlareSaturation: .75
-  flareColorA: {r: 1, g: 1, b: 1, a: 1}
+  flareColorA: {r: .400000006, g: .400000006, b: .800000012, a: .75}
   flareColorB: {r: .400000006, g: .800000012, b: .800000012, a: .75}
   flareColorC: {r: .800000012, g: .400000006, b: .800000012, a: .75}
   flareColorD: {r: .800000012, g: .400000006, b: 0, a: .75}
-  lensFlareVignetteMask: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8,
-    type: 3}
-  lensFlareShader: {fileID: 4800000, guid: 459fe69d2f6d74ddb92f04dbf45a866b, type: 3}
-  screenBlendShader: {fileID: 4800000, guid: 7856cbff0a0ca45c787d5431eb805bb0, type: 3}
-  blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
-  brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
-    type: 3}
+  lensFlareVignetteMask: {fileID: 0}
+  lensFlareShader: {fileID: 0}
+  screenBlendShader: {fileID: 0}
+  blurAndFlaresShader: {fileID: 0}
+  brightPassFilterShader: {fileID: 0}
 --- !u!114 &392446167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2313,14 +2308,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c931a08081abf54f9e7f20e41cc7ba9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1567864179}
-  dampeningSpeed: .125
-  cameraHeight: 17
-  horMinClamp: -22
-  horMaxClamp: 22
-  verMinClamp: -30
-  verMaxClamp: 24
-  shakeFalloff: 2
+  target: {fileID: 0}
+  dampeningSpeed: 0
+  cameraHeight: 0
+  horMinClamp: 0
+  horMaxClamp: 0
+  verMinClamp: 0
+  verMaxClamp: 0
+  shakeFalloff: 0
   shakeLength: 0
 --- !u!81 &392446168
 AudioListener:
@@ -2448,8 +2443,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7c20cfb720cc14ab5f65c9bf4b1f42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shiftMultiplier: 3
-  _player: {fileID: 838223673}
+  shiftMultiplier: 5
+  _player: {fileID: 0}
 --- !u!1 &407311511
 GameObject:
   m_ObjectHideFlags: 0
@@ -3027,26 +3022,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 665af36d3e3d61c4d9f226e1ab9caccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponAmmo: 35
-  baseWeaponAmmo: 35
-  attackCooldownPeriod: .0500000007
-  reloadTime: 4
+  weaponAmmo: 0
+  baseWeaponAmmo: 0
+  attackCooldownPeriod: 0
+  reloadTime: 0
   attackTimeStamp: 0
   reloadTimeStamp: 0
-  isAutomatic: 1
+  isAutomatic: 0
   canAttack: 0
   isReloading: 0
   isPickup: 0
   triggerReleased: 1
-  bullet: {fileID: 162578, guid: c039e184f45f9dd4ba049ad4fce74f1e, type: 2}
-  muzzlePosition: {fileID: 201323175}
+  bullet: {fileID: 0}
+  muzzlePosition: {fileID: 0}
   currentAngleOffset: 0
-  muzzleFlash: {fileID: 19833888, guid: 92f263d81d133e448bf3e45d1887e249, type: 2}
-  muzzleSmoke: {fileID: 19809356, guid: 42daa699c9bd17546aa22f24a77d9f6a, type: 2}
-  weaponShakeStrength: .200000003
-  bulletSpreadAmount: 5
+  muzzleFlash: {fileID: 0}
+  muzzleSmoke: {fileID: 0}
+  weaponShakeStrength: 0
+  bulletSpreadAmount: 0
   multipleProjectiles: 0
-  projectileAmount: 3
+  projectileAmount: 0
   BulletSpacing: 0
   isShotgun: 0
 --- !u!1 &637970854
@@ -4833,7 +4828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab3c9c1d23e4214da4d054a5cae7e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathParticles: {fileID: 19881156, guid: 921543401a5bfb846af2da35edba7d4c, type: 2}
+  deathParticles: {fileID: 0}
   healthPoints: 10
 --- !u!114 &838223676
 MonoBehaviour:
@@ -4910,8 +4905,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44ab8c6dcedef3848aa42430c0db9137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftWeaponSlot: {fileID: 1930811476}
-  rightWeaponSlot: {fileID: 633229989}
+  leftWeaponSlot: {fileID: 0}
+  rightWeaponSlot: {fileID: 0}
 --- !u!114 &838223682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4927,14 +4922,14 @@ MonoBehaviour:
   boostParticles: {fileID: 0}
   boost: 0
   boostHalt: 0
-  boostCooldownPeriod: .5
-  rotationSpeed: 20
-  accelerationSpeed: 80
-  maxMovementSpeed: 8
+  boostCooldownPeriod: 0
+  rotationSpeed: 0
+  accelerationSpeed: 0
+  maxMovementSpeed: 0
   currentMovementSpeed: 0
-  BoostSpeed: 80
-  boostFallOffSpeed: 160
-  stickSensitivity: 2
+  BoostSpeed: 0
+  boostFallOffSpeed: 0
+  stickSensitivity: 0
 --- !u!143 &838223683
 CharacterController:
   m_ObjectHideFlags: 0
@@ -5061,10 +5056,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef1df90825738914c9ce8f9276ab4c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _marker: {fileID: 403024065}
-  _player: {fileID: 838223673}
-  _lineLength: 10
-  _maxLineLength: 20
+  _marker: {fileID: 0}
+  _player: {fileID: 0}
+  _lineLength: 0
+  _maxLineLength: 0
 --- !u!1 &856381096
 GameObject:
   m_ObjectHideFlags: 0
@@ -7661,10 +7656,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3ab77cd7323838439a2f48f561678d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isupperBody: 1
+  isupperBody: 0
   islowerBody: 0
-  parent: {fileID: 838223673}
-  rotationSpeed: 20
+  parent: {fileID: 0}
+  rotationSpeed: 0
 --- !u!1 &1461434674
 GameObject:
   m_ObjectHideFlags: 0
@@ -9077,28 +9072,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 665af36d3e3d61c4d9f226e1ab9caccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponAmmo: 2
-  baseWeaponAmmo: 2
-  attackCooldownPeriod: 1
-  reloadTime: 4
+  weaponAmmo: 0
+  baseWeaponAmmo: 0
+  attackCooldownPeriod: 0
+  reloadTime: 0
   attackTimeStamp: 0
   reloadTimeStamp: 0
-  isAutomatic: 1
+  isAutomatic: 0
   canAttack: 0
   isReloading: 0
   isPickup: 0
   triggerReleased: 1
-  bullet: {fileID: 162578, guid: c039e184f45f9dd4ba049ad4fce74f1e, type: 2}
-  muzzlePosition: {fileID: 1940088398}
+  bullet: {fileID: 0}
+  muzzlePosition: {fileID: 0}
   currentAngleOffset: 0
-  muzzleFlash: {fileID: 19833888, guid: 92f263d81d133e448bf3e45d1887e249, type: 2}
-  muzzleSmoke: {fileID: 19809356, guid: 42daa699c9bd17546aa22f24a77d9f6a, type: 2}
-  weaponShakeStrength: .5
-  bulletSpreadAmount: 15
-  multipleProjectiles: 1
-  projectileAmount: 5
+  muzzleFlash: {fileID: 0}
+  muzzleSmoke: {fileID: 0}
+  weaponShakeStrength: 0
+  bulletSpreadAmount: 0
+  multipleProjectiles: 0
+  projectileAmount: 0
   BulletSpacing: 0
-  isShotgun: 1
+  isShotgun: 0
 --- !u!1 &1931452370
 GameObject:
   m_ObjectHideFlags: 0
@@ -9478,9 +9473,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isupperBody: 0
-  islowerBody: 1
-  parent: {fileID: 838223673}
-  rotationSpeed: 10
+  islowerBody: 0
+  parent: {fileID: 0}
+  rotationSpeed: 0
 --- !u!1 &2110954797
 GameObject:
   m_ObjectHideFlags: 0

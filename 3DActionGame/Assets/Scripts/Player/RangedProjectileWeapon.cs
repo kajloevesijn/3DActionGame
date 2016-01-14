@@ -161,4 +161,14 @@ public class RangedProjectileWeapon : WeaponBase
 			Debug.Log("no muzzle reference");
 		}
 	}
+
+    public int GetAmmoValue()
+    {
+        return baseWeaponAmmo;
+    }
+
+    public int GetCurrentAmmoValue()
+    {
+        return weaponAmmo;
+    }
 }

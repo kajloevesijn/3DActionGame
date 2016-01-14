@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MeleeWeapon : MonoBehaviour {
+public class ReloadUIController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

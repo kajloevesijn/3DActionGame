@@ -234,7 +234,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 475700}
   - 135: {fileID: 13515854}
-  - 54: {fileID: 5441918}
+  - 114: {fileID: 11492462}
   - 114: {fileID: 11484730}
   - 114: {fileID: 11414696}
   - 114: {fileID: 11456532}
@@ -5345,21 +5345,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152848}
   m_Mesh: {fileID: 4300008, guid: 97ab44c0f0802964cb05f7ee07de8734, type: 3}
---- !u!54 &5441918
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 104420}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 36
-  m_CollisionDetection: 0
 --- !u!95 &9543222
 Animator:
   serializedVersion: 3
@@ -5445,7 +5430,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d5236e51ebc5d43b782c95669706a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dashMovement: 1
+  _minDisForDash: 10
+  _maxDisForDash: 15
   playerDistance: 2
+  attackDelay: 0
+  attackCooldown: 0
+--- !u!114 &11492462
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3cd77f1641abf540a827cefc1767f3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerObject: {fileID: 105572, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
 --- !u!135 &13515854
 SphereCollider:
   m_ObjectHideFlags: 1
