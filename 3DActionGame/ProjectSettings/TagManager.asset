@@ -8,6 +8,8 @@ TagManager:
   - Wall
   - Enemy
   - Player
+  - Controller
+  - Floor
   layers:
   - Default
   - TransparentFX
@@ -17,8 +19,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - player
+  - Enemy
   - 
   - 
   - 

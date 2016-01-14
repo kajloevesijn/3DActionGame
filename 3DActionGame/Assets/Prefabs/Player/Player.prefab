@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 420066}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ GameObject:
   - 4: {fileID: 407474}
   - 33: {fileID: 3352226}
   - 23: {fileID: 2386056}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pCube13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 469712}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pCube11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 461858}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 469058}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427106}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 420226}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__transform10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - 4: {fileID: 470270}
   - 33: {fileID: 3363918}
   - 23: {fileID: 2325452}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 471950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - 65: {fileID: 6526976}
   - 114: {fileID: 11409380}
   - 114: {fileID: 11462392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 476312}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 416526}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 444182}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pPipe3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 411742}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   - 4: {fileID: 475648}
   - 33: {fileID: 3358268}
   - 23: {fileID: 2313404}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pPipe5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 406032}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pSphere4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 468174}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 459906}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482076}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__polySurface8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 462574}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 463056}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   - 4: {fileID: 498306}
   - 33: {fileID: 3348238}
   - 23: {fileID: 2309066}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pSphere5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 442366}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pSphere4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +369,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 409940}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pPipe2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 417198}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +399,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426504}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__transform17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,7 +414,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 417578}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 476940}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +444,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 439562}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pPipe7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,7 +459,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 433416}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +474,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 413520}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 407508}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +504,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 469464}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__transform9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +519,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 465374}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__polySurface4 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -534,7 +534,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 443618}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pSphere3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +549,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 402666}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 408632}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -579,7 +579,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 433972}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -594,7 +594,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 467570}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: polySurface2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -610,7 +610,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 467546}
   - 108: {fileID: 10802484}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PointLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -627,7 +627,7 @@ GameObject:
   - 4: {fileID: 451482}
   - 33: {fileID: 3381758}
   - 23: {fileID: 2341310}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pCylinder9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -642,7 +642,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 484410}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -657,7 +657,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 456262}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -672,7 +672,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 429874}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -687,7 +687,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 449188}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -702,7 +702,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 472280}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -717,7 +717,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 481622}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -732,7 +732,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 445882}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -747,7 +747,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 454840}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +762,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 477202}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -777,7 +777,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 494774}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -792,7 +792,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 415162}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -807,7 +807,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 457704}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -822,7 +822,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 457992}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -838,7 +838,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 489022}
   - 114: {fileID: 11440102}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: UpperBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -853,8 +853,24 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 405022}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &134424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 486910}
+  - 108: {fileID: 10803510}
+  m_Layer: 8
+  m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -868,7 +884,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 424432}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -883,7 +899,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 405960}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -898,7 +914,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 419190}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -913,7 +929,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 414372}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pCylinder8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -928,7 +944,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 414852}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -945,7 +961,7 @@ GameObject:
   - 4: {fileID: 492074}
   - 198: {fileID: 19898576}
   - 199: {fileID: 19996816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -960,7 +976,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 430470}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,7 +991,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400950}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -990,7 +1006,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 455432}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1005,7 +1021,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 439080}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1020,7 +1036,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 467836}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1035,7 +1051,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 484980}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1052,7 +1068,7 @@ GameObject:
   - 4: {fileID: 406682}
   - 198: {fileID: 19835270}
   - 199: {fileID: 19990966}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particle System (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1069,7 +1085,7 @@ GameObject:
   - 4: {fileID: 464370}
   - 33: {fileID: 3334754}
   - 23: {fileID: 2382610}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pPipe6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1084,7 +1100,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 469974}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__transform19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1099,7 +1115,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 483132}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1115,7 +1131,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 416266}
   - 108: {fileID: 10816574}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PointLight (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1130,7 +1146,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 415068}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1145,7 +1161,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 452600}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pPipe8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1160,7 +1176,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 411834}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1175,7 +1191,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 436152}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1191,7 +1207,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 407012}
   - 114: {fileID: 11470822}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: marker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1208,7 +1224,7 @@ GameObject:
   - 4: {fileID: 494332}
   - 114: {fileID: 11453380}
   - 65: {fileID: 6533276}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CorridorCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1223,7 +1239,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 437540}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1239,7 +1255,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 459476}
   - 95: {fileID: 9587602}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Upper_Body (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1255,7 +1271,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 445408}
   - 108: {fileID: 10822932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PointLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1270,7 +1286,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 447024}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1285,7 +1301,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 463064}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pPipe9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1300,7 +1316,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 487080}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1316,7 +1332,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 421428}
   - 108: {fileID: 10856260}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1331,7 +1347,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 466174}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1346,7 +1362,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 493372}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1361,7 +1377,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 458148}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1376,7 +1392,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 498970}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1391,7 +1407,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 499312}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1406,7 +1422,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 415726}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1421,7 +1437,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 460990}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1436,7 +1452,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 442072}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1451,7 +1467,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 414656}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__transform15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1466,7 +1482,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488102}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1481,7 +1497,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 463786}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1496,7 +1512,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 468562}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pCube12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1511,7 +1527,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 429458}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__transform18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1528,7 +1544,7 @@ GameObject:
   - 4: {fileID: 498598}
   - 33: {fileID: 3396116}
   - 23: {fileID: 2311514}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1543,7 +1559,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 492998}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pCylinder12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1559,7 +1575,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 471952}
   - 96: {fileID: 9614320}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WheelTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1575,7 +1591,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 481340}
   - 114: {fileID: 11494708}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LowerBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1590,7 +1606,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 417904}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1605,7 +1621,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 421668}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1620,7 +1636,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427044}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__transform16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1635,7 +1651,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 448542}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1652,7 +1668,7 @@ GameObject:
   - 4: {fileID: 465670}
   - 33: {fileID: 3300188}
   - 23: {fileID: 2347978}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pCylinder7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1669,7 +1685,7 @@ GameObject:
   - 4: {fileID: 451474}
   - 33: {fileID: 3329572}
   - 23: {fileID: 2361748}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1684,7 +1700,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 414126}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1699,7 +1715,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 472990}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1714,7 +1730,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 464928}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: polySurface9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1729,7 +1745,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 462504}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1744,7 +1760,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 446000}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1759,7 +1775,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 480144}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1774,7 +1790,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 444018}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1789,7 +1805,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 425114}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1804,7 +1820,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 425378}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__transform14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1819,7 +1835,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 445104}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1836,7 +1852,7 @@ GameObject:
   - 4: {fileID: 469162}
   - 114: {fileID: 11479526}
   - 120: {fileID: 12091844}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AimLine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1851,7 +1867,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 434968}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1866,7 +1882,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 493308}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pSphere3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1883,7 +1899,7 @@ GameObject:
   - 4: {fileID: 430580}
   - 33: {fileID: 3364010}
   - 23: {fileID: 2380650}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pSphere6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1898,7 +1914,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 498804}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1914,7 +1930,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 487510}
   - 95: {fileID: 9511830}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Onderlichaam_Claptrap_Wannabe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1929,7 +1945,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 425214}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pSphere1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1945,7 +1961,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 433096}
   - 96: {fileID: 9644338}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WheelTrail (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1960,7 +1976,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 460824}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1975,7 +1991,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 479728}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1990,7 +2006,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 412624}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2009,7 +2025,7 @@ GameObject:
   - 120: {fileID: 12028768}
   - 82: {fileID: 8237024}
   - 114: {fileID: 11448566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2024,7 +2040,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 476566}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2039,7 +2055,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 498688}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2054,7 +2070,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 435490}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pPipe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2069,7 +2085,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 406040}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2084,7 +2100,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 453804}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2099,7 +2115,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 486512}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2114,7 +2130,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 461332}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2130,7 +2146,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 499206}
   - 96: {fileID: 9633124}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WheelTrail (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2145,7 +2161,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 441824}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2160,7 +2176,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 475148}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCylinder4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2175,7 +2191,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 476896}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2194,7 +2210,7 @@ GameObject:
   - 120: {fileID: 12016694}
   - 82: {fileID: 8248540}
   - 114: {fileID: 11492244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2209,7 +2225,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 423946}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: polySurface4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2224,7 +2240,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 446236}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__transform13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2239,7 +2255,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 462956}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__polySurface9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2254,7 +2270,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 453956}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2271,7 +2287,7 @@ GameObject:
   - 4: {fileID: 494250}
   - 198: {fileID: 19870328}
   - 199: {fileID: 19902222}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Particle System (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2286,7 +2302,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 421694}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2301,7 +2317,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 441404}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2318,7 +2334,7 @@ GameObject:
   - 4: {fileID: 460292}
   - 33: {fileID: 3377096}
   - 23: {fileID: 2333960}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pCylinder11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2333,7 +2349,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 462256}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: polySurface8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2348,7 +2364,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 421604}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2365,7 +2381,7 @@ GameObject:
   - 4: {fileID: 477888}
   - 33: {fileID: 3380962}
   - 23: {fileID: 2320838}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__pPipe4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2380,7 +2396,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 423676}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: polySurface2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2397,7 +2413,7 @@ GameObject:
   - 4: {fileID: 435618}
   - 33: {fileID: 3325378}
   - 23: {fileID: 2301522}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pCube29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2412,7 +2428,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485598}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: polySurface3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2427,7 +2443,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 442178}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2444,7 +2460,7 @@ GameObject:
   - 4: {fileID: 426678}
   - 33: {fileID: 3305210}
   - 23: {fileID: 2398730}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: pasted__polySurface4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2459,7 +2475,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 491074}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: transform37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2518,6 +2534,7 @@ Transform:
   - {fileID: 489022}
   - {fileID: 481340}
   - {fileID: 494332}
+  - {fileID: 486910}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &405960
@@ -4284,6 +4301,18 @@ Transform:
   - {fileID: 415162}
   m_Father: {fileID: 459476}
   m_RootOrder: 16
+--- !u!4 &486910
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134424}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .230000004, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 405816}
+  m_RootOrder: 4
 --- !u!4 &487080
 Transform:
   m_ObjectHideFlags: 1
@@ -5050,9 +5079,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 32
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -5120,9 +5149,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 32
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 1
   BypassReverbZones: 0
@@ -5352,7 +5381,7 @@ Light:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124374}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: .933823526, g: .978850842, b: 1, a: 1}
@@ -5372,7 +5401,39 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294966271
+    m_Bits: 4294966015
+  m_Lightmapping: 4
+  m_BounceIntensity: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
+--- !u!108 &10803510
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134424}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: .934000015, g: 1, b: 1, a: 1}
+  m_Intensity: .889999986
+  m_Range: 50
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 1
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967039
   m_Lightmapping: 4
   m_BounceIntensity: 0
   m_ShadowRadius: 0
@@ -5384,7 +5445,7 @@ Light:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143702}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: .933823526, g: .978850842, b: 1, a: 1}
@@ -5404,7 +5465,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294966271
+    m_Bits: 4294966015
   m_Lightmapping: 4
   m_BounceIntensity: 0
   m_ShadowRadius: 0
@@ -5416,7 +5477,7 @@ Light:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 150006}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: .933823526, g: .978850842, b: 1, a: 1}
@@ -5436,7 +5497,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294966271
+    m_Bits: 4294966015
   m_Lightmapping: 4
   m_BounceIntensity: 0
   m_ShadowRadius: 0
@@ -5485,8 +5546,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ab3c9c1d23e4214da4d054a5cae7e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathParticles: {fileID: 19881156, guid: 921543401a5bfb846af2da35edba7d4c, type: 2}
-  healthPoints: 10
+  deathParticles: {fileID: 19859250, guid: 96f24c0b3c34ae0478c7a2aa4d7e5e96, type: 2}
+  healthPoints: 1000000000
 --- !u!114 &11410238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5525,7 +5586,7 @@ MonoBehaviour:
   weaponAmmo: 1
   baseWeaponAmmo: 1
   attackCooldownPeriod: 0
-  reloadTime: 4
+  reloadTime: .100000001
   attackTimeStamp: 0
   reloadTimeStamp: 0
   isAutomatic: 1
@@ -5573,7 +5634,7 @@ MonoBehaviour:
   boostParticles: {fileID: 0}
   boost: 0
   boostHalt: 0
-  boostCooldownPeriod: .5
+  boostCooldownPeriod: 1
   rotationSpeed: 20
   accelerationSpeed: 80
   maxMovementSpeed: 8
@@ -5604,8 +5665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioList:
-  - {fileID: 8300000, guid: 9cfac987ec29b3e4aacabe7cdbe5d581, type: 3}
-  audioVolume: .25
+  - {fileID: 8300000, guid: b325a24b485077b409343b2f30a54d9b, type: 3}
+  audioVolume: .349999994
   autoStopSound: 0
   randomisePitch: 0
   minPitch: 0
@@ -5712,7 +5773,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8b2a06f108a138e4d96134ed0f918aa0, type: 3}
   - {fileID: 8300000, guid: 319465729da0e05489c8f87e7461ac5a, type: 3}
   - {fileID: 8300000, guid: b883e5b4914ad8043acf5b418c859864, type: 3}
-  audioVolume: .5
+  audioVolume: .349999994
   autoStopSound: 0
   randomisePitch: 0
   minPitch: 0

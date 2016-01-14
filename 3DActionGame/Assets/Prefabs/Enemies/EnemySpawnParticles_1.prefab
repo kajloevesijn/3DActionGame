@@ -45,6 +45,7 @@ GameObject:
   - 198: {fileID: 19859262}
   - 199: {fileID: 19959144}
   - 114: {fileID: 11400826}
+  - 82: {fileID: 8279348}
   m_Layer: 0
   m_Name: EnemySpawnParticles_1
   m_TagString: Untagged
@@ -120,6 +121,87 @@ Transform:
   - {fileID: 473810}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!82 &8279348
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158404}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300001, guid: acf935be6fde5d6479de2afbfb5663d5,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: b7df4544d7c98d24796f3d40df5dabd7, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .25
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 32
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: .00289855083
+      value: 1.01279068
+      inSlope: -2.78488421
+      outSlope: -2.78488421
+      tangentMode: 0
+    - time: .130133525
+      value: .787204862
+      inSlope: -2.02292848
+      outSlope: -2.02292848
+      tangentMode: 0
+    - time: .254640728
+      value: .150416613
+      inSlope: -.728370368
+      outSlope: -.728370368
+      tangentMode: 0
+    - time: 1
+      value: .0127907097
+      inSlope: -.106589146
+      outSlope: -.106589146
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!114 &11400826
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1486,10 +1568,130 @@ ParticleSystem:
           inSlope: 0
           outSlope: 0
           tangentMode: 0
-        - time: 1
-          value: 1
-          inSlope: 0
-          outSlope: 0
+        - time: .0407102816
+          value: .640163302
+          inSlope: .195051551
+          outSlope: .195051551
+          tangentMode: 0
+        - time: .0891928077
+          value: .0409806296
+          inSlope: .464171171
+          outSlope: .464171171
+          tangentMode: 0
+        - time: .128128216
+          value: .575557709
+          inSlope: .619459927
+          outSlope: .619459927
+          tangentMode: 0
+        - time: .177811652
+          value: .105096042
+          inSlope: .766217709
+          outSlope: .766217709
+          tangentMode: 0
+        - time: .215753511
+          value: .542922378
+          inSlope: .875815749
+          outSlope: .875815749
+          tangentMode: 0
+        - time: .284216315
+          value: .203935206
+          inSlope: .38583529
+          outSlope: .38583529
+          tangentMode: 0
+        - time: .313457459
+          value: .562411964
+          inSlope: 1.0856986
+          outSlope: 1.0856986
+          tangentMode: 0
+        - time: .354659706
+          value: .240967065
+          inSlope: 1.41851389
+          outSlope: 1.41851389
+          tangentMode: 0
+        - time: .385311753
+          value: .595928848
+          inSlope: -.0644245967
+          outSlope: -.0644245967
+          tangentMode: 0
+        - time: .424422622
+          value: .309706807
+          inSlope: 1.1613965
+          outSlope: 1.1613965
+          tangentMode: 0
+        - time: .444125712
+          value: .627722561
+          inSlope: .271898061
+          outSlope: .271898061
+          tangentMode: 0
+        - time: .481389582
+          value: .365176052
+          inSlope: -.000616664474
+          outSlope: -.000616664474
+          tangentMode: 0
+        - time: .503035724
+          value: .687706888
+          inSlope: -.335257322
+          outSlope: -.335257322
+          tangentMode: 0
+        - time: .550741017
+          value: .418128431
+          inSlope: 1.27643347
+          outSlope: 1.27643347
+          tangentMode: 0
+        - time: .569170654
+          value: .723120213
+          inSlope: .0106583936
+          outSlope: .0106583936
+          tangentMode: 0
+        - time: .605208993
+          value: .499774694
+          inSlope: 1.20818615
+          outSlope: 1.20818615
+          tangentMode: 0
+        - time: .630234063
+          value: .790604234
+          inSlope: 1.25825405
+          outSlope: 1.25825405
+          tangentMode: 0
+        - time: .664785564
+          value: .590013385
+          inSlope: 1.05857849
+          outSlope: 1.05857849
+          tangentMode: 0
+        - time: .680427492
+          value: .830636024
+          inSlope: 1.13487244
+          outSlope: 1.13487244
+          tangentMode: 0
+        - time: .707832992
+          value: .653629243
+          inSlope: 1.01983547
+          outSlope: 1.01983547
+          tangentMode: 0
+        - time: .719893932
+          value: .851155758
+          inSlope: 1.10626221
+          outSlope: 1.10626221
+          tangentMode: 0
+        - time: .74367696
+          value: .702560306
+          inSlope: .98913908
+          outSlope: .98913908
+          tangentMode: 0
+        - time: .764129877
+          value: .878090262
+          inSlope: 1.12980604
+          outSlope: 1.12980604
+          tangentMode: 0
+        - time: .778438687
+          value: .770180762
+          inSlope: .980496407
+          outSlope: .980496407
+          tangentMode: 0
+        - time: .800920129
+          value: .888609827
+          inSlope: 1.2293458
+          outSlope: 1.2293458
           tangentMode: 0
         - time: 1
           value: 1
@@ -4444,6 +4646,14 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.size
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
@@ -4466,6 +4676,267 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: ColorModule.gradient.maxGradient.m_NumColorKeys
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].inSlope
+      value: -2.78488421
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outSlope
+      value: -2.78488421
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inSlope
+      value: -2.02292848
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outSlope
+      value: -2.02292848
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].time
+      value: .00289855083
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].time
+      value: .130133525
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
+      value: .787204862
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b7df4544d7c98d24796f3d40df5dabd7, type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_Volume
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: MaxDistance
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].time
+      value: .254640728
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].value
+      value: .150416613
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].inSlope
+      value: -.728370368
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[2].outSlope
+      value: -.728370368
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].inSlope
+      value: -.106589146
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].outSlope
+      value: -.106589146
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].value
+      value: 1.01279068
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].value
+      value: .0127907097
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300001, guid: acf935be6fde5d6479de2afbfb5663d5,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].time
+      value: .0407102816
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].value
+      value: .640163302
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[3].value
+      value: .575557709
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[3].time
+      value: .128128216
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[5].value
+      value: .542922378
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[5].time
+      value: .215753511
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[7].time
+      value: .313457459
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[7].value
+      value: .562411964
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[9].value
+      value: .595928848
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[9].time
+      value: .385311753
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[15].value
+      value: .723120213
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[15].time
+      value: .569170654
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[16].value
+      value: .499774694
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[16].time
+      value: .605208993
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[8].time
+      value: .354659706
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[8].value
+      value: .240967065
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[10].value
+      value: .309706807
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[10].time
+      value: .424422622
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[12].time
+      value: .481389582
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[12].value
+      value: .365176052
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[14].value
+      value: .418128431
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[14].time
+      value: .550741017
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[17].time
+      value: .630234063
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[17].value
+      value: .790604234
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[18].value
+      value: .590013385
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[18].time
+      value: .664785564
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[18].inSlope
+      value: 1.05857849
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[18].outSlope
+      value: 1.05857849
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[19].time
+      value: .680427492
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[19].value
+      value: .830636024
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[19].inSlope
+      value: 1.13487244
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[19].outSlope
+      value: 1.13487244
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[20].time
+      value: .707832992
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[20].value
+      value: .653629243
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[22].time
+      value: .74367696
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[22].value
+      value: .702560306
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[24].time
+      value: .778438687
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[24].value
+      value: .770180762
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[24].inSlope
+      value: .980496407
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[24].outSlope
+      value: .980496407
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[25].time
+      value: .800920129
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[25].value
+      value: .888609827
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[25].inSlope
+      value: 1.2293458
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[25].outSlope
+      value: 1.2293458
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

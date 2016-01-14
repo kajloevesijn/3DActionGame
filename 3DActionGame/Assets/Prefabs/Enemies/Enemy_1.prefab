@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 483364}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform54
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,7 +23,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 440448}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 489188}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 459310}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 453938}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__pPipe4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 416864}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 499388}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: gun2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 480380}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 410278}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: loop1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 437388}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 448592}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 411366}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,7 +188,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 413506}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform55
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 495742}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,7 +218,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 478700}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 413376}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -248,7 +248,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 439774}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: gun3_gun4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 450284}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 491266}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: buttom_prop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 407206}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 479810}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform41 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 453888}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wing2_pCylinder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -338,7 +338,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485216}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -353,7 +353,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 470790}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -368,7 +368,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485932}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface15 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 413826}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -398,7 +398,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 431258}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +413,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 415046}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +428,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 421804}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface17 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 476288}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform50 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +458,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 431050}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wing2 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +473,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 418914}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 486328}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 487070}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: gun3_gun3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +518,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 432068}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +533,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 475016}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,7 +548,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 483922}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: top_prop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +563,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 437424}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -578,7 +578,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 498922}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -593,7 +593,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 417244}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -608,7 +608,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485060}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,7 +623,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 411578}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface8 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -638,7 +638,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 412738}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform64
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +653,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 493364}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform49 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -668,7 +668,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 473506}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform62
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -683,7 +683,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 463758}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform59
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,7 +698,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 464954}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +713,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 480778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform53 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +728,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 425210}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__pCylinder3 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -743,7 +743,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -758,7 +758,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 478476}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface20 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -773,7 +773,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 401998}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface22 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -788,7 +788,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 412002}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wing2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -803,7 +803,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 466682}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -818,7 +818,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 471788}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: loop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -833,7 +833,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 430788}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -848,7 +848,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 415838}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -863,7 +863,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 431434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -878,7 +878,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 498258}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -893,7 +893,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 441972}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -908,7 +908,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 447024}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform49
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -923,7 +923,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 473884}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -938,7 +938,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 419972}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -953,7 +953,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488112}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: group3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -968,7 +968,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 401356}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: head1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -985,7 +985,7 @@ GameObject:
   - 4: {fileID: 455676}
   - 33: {fileID: 3334160}
   - 23: {fileID: 2373118}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__pCylinder5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1000,7 +1000,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 458210}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform56
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1015,7 +1015,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 439694}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface16 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1030,7 +1030,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 469402}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1045,7 +1045,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488166}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1060,7 +1060,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 458326}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform48 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1075,7 +1075,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 419870}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1090,7 +1090,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 466670}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface12 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1105,7 +1105,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 441138}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1120,7 +1120,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 470798}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1138,7 +1138,7 @@ GameObject:
   - 198: {fileID: 19807614}
   - 199: {fileID: 19963234}
   - 114: {fileID: 11436194}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1153,7 +1153,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 428254}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1168,7 +1168,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 483512}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pPipe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1183,7 +1183,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 401016}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1198,7 +1198,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 431832}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1213,7 +1213,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 444964}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform55 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1228,7 +1228,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 413904}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface11 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1243,7 +1243,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 437556}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface25 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1258,7 +1258,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 490734}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1273,7 +1273,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 428180}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1288,7 +1288,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 477966}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform51 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1303,7 +1303,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 464992}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform45 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1318,7 +1318,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482884}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform50
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1333,7 +1333,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 424336}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1348,7 +1348,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 483246}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1363,7 +1363,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 409256}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface27 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1378,7 +1378,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 418232}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1393,7 +1393,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 424342}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1408,7 +1408,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 434408}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1424,7 +1424,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 440974}
   - 95: {fileID: 9515752}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1439,7 +1439,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400384}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wing2_pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,7 +1454,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 463434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1469,7 +1469,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403204}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1484,7 +1484,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 459108}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1499,7 +1499,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 472550}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface3 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1514,7 +1514,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427702}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1529,7 +1529,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 455714}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1544,7 +1544,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400604}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: loop2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1559,7 +1559,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 490664}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1574,7 +1574,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488834}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1589,7 +1589,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 467942}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform44 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1604,7 +1604,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 480454}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1619,7 +1619,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 458652}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: head2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1634,7 +1634,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403606}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1651,7 +1651,7 @@ GameObject:
   - 4: {fileID: 422390}
   - 33: {fileID: 3343324}
   - 23: {fileID: 2336584}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__gun3_gun7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1666,7 +1666,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 457482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform47 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1681,7 +1681,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 439572}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform60
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1696,7 +1696,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 421228}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface19 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1711,7 +1711,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403922}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1726,7 +1726,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 432984}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: group1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1741,7 +1741,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 445672}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface9 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1756,7 +1756,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 441244}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pCylinder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1771,7 +1771,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 402646}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1788,6 +1788,7 @@ GameObject:
   - 4: {fileID: 449820}
   - 114: {fileID: 11443396}
   - 114: {fileID: 11468666}
+  - 114: {fileID: 11498350}
   - 114: {fileID: 11483386}
   - 114: {fileID: 11407498}
   - 114: {fileID: 11457694}
@@ -1795,7 +1796,8 @@ GameObject:
   - 114: {fileID: 11467858}
   - 54: {fileID: 5425884}
   - 65: {fileID: 6577900}
-  m_Layer: 0
+  - 82: {fileID: 8243416}
+  m_Layer: 9
   m_Name: Enemy_1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1810,7 +1812,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 418134}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1825,7 +1827,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 478240}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1840,7 +1842,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 436818}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Muzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1855,7 +1857,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 493000}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform43 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1870,7 +1872,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 447106}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1885,7 +1887,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 409528}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1900,7 +1902,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 436514}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1915,7 +1917,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 438496}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface18 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1930,7 +1932,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 431568}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform42
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1945,7 +1947,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485580}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform40 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1960,7 +1962,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 469126}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform61
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1975,7 +1977,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 470072}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface10 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1990,7 +1992,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400944}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__gun3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2005,7 +2007,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 497062}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform63
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2020,7 +2022,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 456592}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2035,7 +2037,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 454344}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__Tube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2050,7 +2052,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 486602}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pPipe2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2065,7 +2067,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403498}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform46 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2080,7 +2082,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 442938}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2095,8 +2097,24 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 421942}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &177720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 499922}
+  - 108: {fileID: 10883816}
+  m_Layer: 9
+  m_Name: Point light (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2110,7 +2128,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403954}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: loop 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2125,7 +2143,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 466432}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: button_prop2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2140,7 +2158,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 463966}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__pCylinder4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2155,7 +2173,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 492744}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2170,7 +2188,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 432826}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform66
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2185,7 +2203,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 423052}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface21 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2200,7 +2218,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 404960}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2218,7 +2236,7 @@ GameObject:
   - 33: {fileID: 3334862}
   - 23: {fileID: 2379200}
   - 114: {fileID: 11423074}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__wing_pCylinder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2233,7 +2251,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427078}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2248,7 +2266,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 416972}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2263,7 +2281,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 456994}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2278,7 +2296,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 439734}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2293,7 +2311,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 439408}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__head2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2308,7 +2326,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 414576}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2323,7 +2341,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 459452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2338,7 +2356,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 473888}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: gun2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2353,7 +2371,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403110}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: polySurface4 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2368,7 +2386,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 442606}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pCylinder1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2383,7 +2401,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 411766}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2398,7 +2416,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 495042}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2414,7 +2432,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 454626}
   - 96: {fileID: 9640442}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2429,7 +2447,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 499100}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2444,7 +2462,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488434}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: gun3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2459,7 +2477,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 443044}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2474,7 +2492,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482466}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__Tube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2489,7 +2507,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 486520}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2504,7 +2522,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 401042}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface13 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2519,7 +2537,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 454254}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: loop3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2534,7 +2552,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 471398}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2549,7 +2567,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485906}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__pCylinder3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2564,7 +2582,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 457616}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2579,7 +2597,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 484632}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2594,7 +2612,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 429422}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform42 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2609,7 +2627,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488464}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2624,7 +2642,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 443404}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: top_prop2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2639,7 +2657,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 446748}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__Tube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2654,7 +2672,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 459494}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform65
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2669,7 +2687,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 472774}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: group2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2684,7 +2702,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 446430}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform58
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2699,7 +2717,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 461494}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__gun2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2714,7 +2732,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 404232}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform54 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2729,7 +2747,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 430088}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: transform35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2744,7 +2762,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 420184}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__transform52 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2759,7 +2777,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 409472}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: gun3_gun2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2774,7 +2792,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403714}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pasted__polySurface14 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2884,7 +2902,7 @@ Transform:
   m_Children:
   - {fileID: 454626}
   m_Father: {fileID: 449820}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &402646
 Transform:
   m_ObjectHideFlags: 1
@@ -3687,7 +3705,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 449820}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!4 &437388
 Transform:
   m_ObjectHideFlags: 1
@@ -3853,7 +3871,7 @@ Transform:
   - {fileID: 400384}
   - {fileID: 453888}
   m_Father: {fileID: 449820}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &441138
 Transform:
   m_ObjectHideFlags: 1
@@ -4039,6 +4057,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 2, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 499922}
   - {fileID: 440974}
   - {fileID: 402392}
   - {fileID: 436818}
@@ -5172,6 +5191,18 @@ Transform:
   - {fileID: 411766}
   m_Father: {fileID: 488434}
   m_RootOrder: 0
+--- !u!4 &499922
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177720}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .200000003, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_Children: []
+  m_Father: {fileID: 449820}
+  m_RootOrder: 0
 --- !u!23 &2336584
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -5299,6 +5330,77 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: .289999992, z: 0}
+--- !u!82 &8243416
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169038}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300001, guid: acf935be6fde5d6479de2afbfb5663d5,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: .25
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 32
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9515752
 Animator:
   serializedVersion: 3
@@ -5363,6 +5465,38 @@ TrailRenderer:
       rgba: 44287
   m_MinVertexDistance: .100000001
   m_Autodestruct: 0
+--- !u!108 &10883816
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177720}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: 1, g: .984524131, b: .934000015, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 1
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294966783
+  m_Lightmapping: 4
+  m_BounceIntensity: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &11407498
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5479,6 +5613,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5c482085f604d94cafc057705f1a597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11498350
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3648931bcd9ee5546adbe18ab36f6a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioList:
+  - {fileID: 8300000, guid: 3570cea8875050247ad7d80e814a8710, type: 3}
+  - {fileID: 8300000, guid: d9b301fac5be46c409a54ba82d9dbd1a, type: 3}
+  audioVolume: .300000012
+  autoStopSound: 0
+  randomisePitch: 0
+  minPitch: 0
+  maxPitch: 0
 --- !u!198 &19807614
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -6538,6 +6691,10 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: audioList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
@@ -6623,6 +6780,35 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Volume
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: audioVolume
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: MaxDistance
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300001, guid: acf935be6fde5d6479de2afbfb5663d5,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 169038}

@@ -23,6 +23,7 @@ public class EnemyAttack : MonoBehaviour {
 				if (Time.time >= _timeStamp && Time.time >= _attackDelayTimeStamp) {
 					_timeStamp = Time.time + _attackCooldown;
 					Instantiate(attackParticles,muzzle.transform.position,muzzle.transform.rotation);
+					GetComponent<AudioSourceController>().ChangeAudioSourceByIndex(0);
 					_target.GetComponent<HealthController> ().TakeDamage ();
 
 				}
