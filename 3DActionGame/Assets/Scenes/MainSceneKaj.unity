@@ -224,7 +224,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11476686, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
       propertyPath: dampeningSpeed
-      value: .125
+      value: .075000003
       objectReference: {fileID: 0}
     - target: {fileID: 11478670, guid: 5e3f0c8e821ba2248a0201a0df7c1fda, type: 2}
       propertyPath: motionBlurBuildup
@@ -532,8 +532,83 @@ Prefab:
       propertyPath: m_Center.y
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     m_RemovedComponents:
     - {fileID: 11457014, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+=======
+<<<<<<< HEAD
+    - target: {fileID: 12016694, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: m_Parameters.endWidth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 12028768, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 12016694, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: m_Positions.Array.data[1].z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434084, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: weaponShakeStrength
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11463508, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: weaponShakeStrength
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 494332, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.257999986
+      objectReference: {fileID: 0}
+    - target: {fileID: 481340, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.257999986
+      objectReference: {fileID: 0}
+    - target: {fileID: 489022, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.257999986
+      objectReference: {fileID: 0}
+    - target: {fileID: 407012, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.257999986
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470822, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: shiftMultiplier
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526976, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: m_Size.y
+      value: 1.14999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526976, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: m_Size.z
+      value: 1.32000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526976, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: m_Size.x
+      value: 1.17999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434084, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: projectileAmount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434084, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: baseWeaponAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434084, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: weaponAmmo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434084, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
+      propertyPath: reloadTime
+      value: 3
+      objectReference: {fileID: 0}
+=======
+>>>>>>> 81482a4cbfebb95cf66db9d1464229fe7fd76859
+    m_RemovedComponents: []
+>>>>>>> 0b7c4d0ad772f1b4e61036c3a8c79ec4ab59f46c
   m_ParentPrefab: {fileID: 100100000, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &735762644
@@ -1649,9 +1724,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemies:
+<<<<<<< HEAD
+  - {fileID: 158404, guid: 525c4bcc5a465ab4ea205ddfbc07e214, type: 2}
+  - {fileID: 130116, guid: c1bb9962e9ba74a45a52ae85267ae00c, type: 2}
+  - {fileID: 117220, guid: 970320e54c903c340829a40154f82927, type: 2}
+=======
   - {fileID: 169038, guid: 77b9e9456d453474592d26a36751096d, type: 2}
   - {fileID: 145188, guid: df8b3cc070f5e9d4c9ee1532da04670f, type: 2}
   - {fileID: 104420, guid: f4e923d70687c2146a91b3564b5fc272, type: 2}
+>>>>>>> 81482a4cbfebb95cf66db9d1464229fe7fd76859
   _player: {fileID: 105572, guid: a4d3b8f975689bd469224615c695cf3f, type: 2}
   _spawnDelay: 2
   _minSpawnDistance: 15

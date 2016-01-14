@@ -62,7 +62,7 @@ public class SpawnSystem : MonoBehaviour {
 	private Vector3 RandomWorldPoint(){
 		Vector3 randomWorldPoint;
 		randomWorldPoint.x = Random.Range (-_spawnArea, _spawnArea);
-		randomWorldPoint.y = 3f;
+		randomWorldPoint.y = 1f;
 		randomWorldPoint.z = Random.Range (-_spawnArea, _spawnArea);
 		return randomWorldPoint;
 	}

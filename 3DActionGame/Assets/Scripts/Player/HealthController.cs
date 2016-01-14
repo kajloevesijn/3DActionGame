@@ -12,7 +12,7 @@ public class HealthController : MonoBehaviour
         Debug.Log(healthPoints);
 		if (healthPoints <= 0) {
 			Instantiate(deathParticles,transform.position,Quaternion.identity);
-			Destroy(this.gameObject); //kind of like destroying
+			Destroy(this.gameObject);
 		}
     }
 }
