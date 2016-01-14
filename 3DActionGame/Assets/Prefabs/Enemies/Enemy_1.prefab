@@ -2407,7 +2407,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &185358
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -2881,7 +2881,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .0560000017, y: .757000029, z: -.0719999969}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 454626}
   m_Father: {fileID: 449820}
   m_RootOrder: 1
 --- !u!4 &402646
@@ -3686,7 +3687,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 449820}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!4 &437388
 Transform:
   m_ObjectHideFlags: 1
@@ -4040,7 +4041,6 @@ Transform:
   m_Children:
   - {fileID: 440974}
   - {fileID: 402392}
-  - {fileID: 454626}
   - {fileID: 436818}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -4116,11 +4116,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.486000001, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 449820}
-  m_RootOrder: 2
+  m_Father: {fileID: 402392}
+  m_RootOrder: 0
 --- !u!4 &455676
 Transform:
   m_ObjectHideFlags: 1
@@ -5283,13 +5283,13 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 36
   m_CollisionDetection: 0
 --- !u!65 &6577900
 BoxCollider:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169038}
@@ -5462,6 +5462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3d5236e51ebc5d43b782c95669706a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dashMovement: 1
   _dashSpeed: 20
   _minDisForDash: 10
   _maxDisForDash: 15
@@ -6559,7 +6560,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_UseGravity
