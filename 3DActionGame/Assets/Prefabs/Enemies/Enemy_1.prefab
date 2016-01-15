@@ -5480,7 +5480,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: -1
     m_Strength: 1
     m_Bias: .0500000007
@@ -5627,7 +5627,7 @@ MonoBehaviour:
   audioList:
   - {fileID: 8300000, guid: 3570cea8875050247ad7d80e814a8710, type: 3}
   - {fileID: 8300000, guid: d9b301fac5be46c409a54ba82d9dbd1a, type: 3}
-  audioVolume: .300000012
+  audioVolume: .349999994
   autoStopSound: 0
   randomisePitch: 0
   minPitch: 0
@@ -6794,7 +6794,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: audioVolume
-      value: .300000012
+      value: .349999994
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rolloffMode
@@ -6809,6 +6809,10 @@ Prefab:
       value: 
       objectReference: {fileID: 24300001, guid: acf935be6fde5d6479de2afbfb5663d5,
         type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 169038}

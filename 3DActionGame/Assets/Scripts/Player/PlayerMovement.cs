@@ -118,6 +118,7 @@ public class PlayerMovement : MonoBehaviour
             
             if (boostHalt == false)
             {
+				GetComponent<AudioSourceController>().ChangeAudioSourceByIndex(0);
                 timeStampBoost = Time.time + boostCooldownPeriod; // sets cooldown
                 boostHalt = true;  //don't repeat this otherwise maxmove is stuck at 20
                 maxMovementSpeed = BoostSpeed; // sets new max speed for boost;
