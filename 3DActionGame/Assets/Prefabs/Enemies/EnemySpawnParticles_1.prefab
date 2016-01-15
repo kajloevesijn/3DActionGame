@@ -133,7 +133,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 350298d3b96ab8949a9864f807ca0a0b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .349999994
+  m_Volume: .200000003
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -143,32 +143,22 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 64
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: .00289855083
-      value: 1.01279068
-      inSlope: -2.78488421
-      outSlope: -2.78488421
-      tangentMode: 0
-    - time: .130133525
-      value: .787204862
-      inSlope: -2.02292848
-      outSlope: -2.02292848
-      tangentMode: 0
-    - time: .254640728
-      value: .150416613
-      inSlope: -.728370368
-      outSlope: -.728370368
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
     - time: 1
-      value: .0127907097
-      inSlope: -.106589146
-      outSlope: -.106589146
+      value: 0
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -4647,7 +4637,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 0}
       propertyPath: rolloffCustomCurve.m_Curve.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.size
@@ -4683,35 +4673,35 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rolloffMode
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].inSlope
-      value: -2.78488421
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].outSlope
-      value: -2.78488421
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].inSlope
-      value: -2.02292848
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].outSlope
-      value: -2.02292848
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].time
-      value: .00289855083
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].time
-      value: .130133525
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[1].value
-      value: .787204862
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_audioClip
@@ -4719,7 +4709,7 @@ Prefab:
       objectReference: {fileID: 8300000, guid: 350298d3b96ab8949a9864f807ca0a0b, type: 3}
     - target: {fileID: 0}
       propertyPath: m_Volume
-      value: .349999994
+      value: .200000003
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: MaxDistance
@@ -4751,7 +4741,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[0].value
-      value: 1.01279068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].value
@@ -4937,6 +4927,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[25].outSlope
       value: 1.2293458
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: rolloffCustomCurve.m_Curve.Array.data[3].time
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
