@@ -123,19 +123,17 @@ public class PlayerMovement : MonoBehaviour
                 maxMovementSpeed = BoostSpeed; // sets new max speed for boost;
             }
         }
-        //maxMovementSpeed -= (Time.deltaTime * boostFallOff); // decreases speed over time
+
         if (maxMovementSpeed <= baseMaxMovementSpeed) // if the speed fell of back to the base amount set previous maxspeed to normal and bool to false
         {
             maxMovementSpeed = baseMaxMovementSpeed; // set max back to normal
             boost = false; // you aren't boosting anymore
-            boostHalt = false;  //you can set the boost speed aain
+            boostHalt = false;  //you can set the boost speed again
 
         }
         else
         {
-            //maxMovementSpeed = maxMovementSpeed * (Time.deltaTime * boostFallOff); // decreases speed over time
 			boostFalloff = Time.deltaTime * (boostFallOffSpeed * Time.smoothDeltaTime);
-			Debug.Log(boostFalloff);
 			maxMovementSpeed -= Time.smoothDeltaTime * boostFallOffSpeed;
         }
 

@@ -25,8 +25,5 @@ public class WeaponBase : MonoBehaviour {//setting up some base variables for th
     public bool isPickup; // if the weapon is a pickup, you can't shoot or do anything with it except for picking it up.
     public bool triggerReleased = true;
 
-
-    protected AmmoController ammoController;
-
     private bool playerFound = true;
 }

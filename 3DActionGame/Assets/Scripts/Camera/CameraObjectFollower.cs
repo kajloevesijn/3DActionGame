@@ -17,8 +17,6 @@ public class CameraObjectFollower : MonoBehaviour {
 	private Vector3 clampedCameraPos;
 	private float baseDampeningSpeed;
 
-    private CorridorCheck check;
-
     private float modifiedCameraHeight;
 
     private Vector3 velocity = Vector3.zero;
@@ -44,14 +42,11 @@ public class CameraObjectFollower : MonoBehaviour {
 			float xClamp = Mathf.Clamp(destination.x,horMinClamp,horMaxClamp);
 			float zClamp = Mathf.Clamp(destination.z,verMinClamp,verMaxClamp);
 			clampedCameraPos = new Vector3(xClamp,modifiedCameraHeight,zClamp);
-
-			//transform.position = Vector3.SmoothDamp(transform.position, clampedCameraPos, ref velocity, dampeningSpeed);
 		}
 	}
 
 	public void Shake(){
 		if (shakeLength > 0) {
-			//dampeningSpeed = 0;
 			float randomX = clampedCameraPos.x + Random.Range(-shakeLength,shakeLength);
 			float randomZ = clampedCameraPos.z + Random.Range(-shakeLength,shakeLength);
 			clampedCameraPos = new Vector3(randomX,cameraHeight,randomZ);

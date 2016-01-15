@@ -25,8 +25,6 @@ public class AmmoUIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		//_totalAmmo = _weapon.TotalAmmo();
-
         _currentAmmo = _weapon.CurrentAmmo();
 
         DisplayAmmo();

@@ -9,7 +9,6 @@ public class HealthController : MonoBehaviour
     public void TakeDamage()
     {
         healthPoints--;
-        Debug.Log(healthPoints);
 		if (healthPoints <= 0) {
 			Instantiate(deathParticles,transform.position,Quaternion.identity);
 			Destroy(this.gameObject);

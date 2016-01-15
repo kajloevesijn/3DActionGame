@@ -29,7 +29,7 @@ public class ComboSystem : MonoBehaviour {
 		return currentCombo;
 	}
 	public int getHighestCombo(){
-		return currentCombo;
+		return highestCombo;
 	}
 
 	
