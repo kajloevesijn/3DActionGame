@@ -33,9 +33,9 @@ public class AmmoUIController : MonoBehaviour
     void DisplayAmmo()
     {
 		if (_weapon.CurrentReloadState() == false) {
-			_ammoText.text = "Gun Ammo: " + _totalAmmo.ToString () + " / " + _currentAmmo.ToString ();
+			_ammoText.text = _currentAmmo.ToString ();
 		} else {
-			_ammoText.text = "Gun Ammo: " + _totalAmmo.ToString() + " / " + "Reloading";
+            _ammoText.text = "...";
 		}
     }
 }
