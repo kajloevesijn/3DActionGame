@@ -14,4 +14,9 @@ public class HealthController : MonoBehaviour
 			Destroy(this.gameObject);
 		}
     }
+
+    public int GetHealth()
+    {
+        return healthPoints;
+    }
 }

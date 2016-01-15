@@ -5505,7 +5505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathParticles: {fileID: 19859250, guid: 96f24c0b3c34ae0478c7a2aa4d7e5e96, type: 2}
-  healthPoints: 1000000000
+  healthPoints: 10
 --- !u!114 &11410238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5544,7 +5544,7 @@ MonoBehaviour:
   weaponAmmo: 1
   baseWeaponAmmo: 1
   attackCooldownPeriod: 0
-  reloadTime: .100000001
+  reloadTime: 2
   attackTimeStamp: 0
   reloadTimeStamp: 0
   isAutomatic: 1
@@ -5656,7 +5656,7 @@ MonoBehaviour:
   weaponAmmo: 35
   baseWeaponAmmo: 35
   attackCooldownPeriod: .100000001
-  reloadTime: 4
+  reloadTime: 2.5
   attackTimeStamp: 0
   reloadTimeStamp: 0
   isAutomatic: 1
