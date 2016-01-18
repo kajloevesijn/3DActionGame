@@ -6,7 +6,7 @@ public class MoveToTarget : MonoBehaviour
     private GameObject _target;
 
     private float _moveSpeed = 6;
-    private float _speedIncrease = 0.01f;
+    private float _speedIncrease = 0.03f;
     private float _maxSpeed = 15;
     [SerializeField]private float _dashMovement = 1f;
 

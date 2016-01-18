@@ -16,6 +16,9 @@ public class SpawnEnemies : MonoBehaviour
     private float _timeFor3Enemies;
 
     private float _spawnArea = 31;
+
+	private float _spawnCooldownDecrease = 0.0250f;
+	private float _spawnCooldownDecreaseDecrease = 0.0005f;
     void Start()
     {
         _timeFor2Enemies = Time.time + 30;//adds enemy2 after 20 seconds
@@ -58,6 +61,11 @@ public class SpawnEnemies : MonoBehaviour
 
             //wait for new spawn
             yield return new WaitForSeconds(_spawnDelay);
+			_spawnDelay -= _spawnCooldownDecrease;
+			_spawnCooldownDecrease -= _spawnCooldownDecreaseDecrease;
+			if(_spawnCooldownDecrease < 0){
+				_spawnCooldownDecrease = 0;
+			}
         }
     }
 
