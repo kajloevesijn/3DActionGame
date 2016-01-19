@@ -3,7 +3,7 @@ using System.Collections;
 
 public class HealthController : MonoBehaviour
 {
-    private float _endGameDelay = 5f;
+    private float _endGameDelay = 1;
 
 	[SerializeField]protected ParticleSystem deathParticles;
 
@@ -13,17 +13,19 @@ public class HealthController : MonoBehaviour
         healthPoints--;
 		if (healthPoints <= 0) {
 			Instantiate(deathParticles,transform.position,Quaternion.identity);
-			Destroy(this.gameObject);
-            StartCoroutine(GoToMenu());
+            //StartCoroutine(GoToMenu());
+            Destroy(this.gameObject);
 		}
     }
 
-    IEnumerator GoToMenu()
+    /*IEnumerator GoToMenu()
     {
+        Destroy(this.gameObject);
         yield return new WaitForSeconds(_endGameDelay);
 
+        //Destroy(this.gameObject);
         Application.LoadLevel(0);
-    }
+    }*/
 
     public int GetHealth()
     {
